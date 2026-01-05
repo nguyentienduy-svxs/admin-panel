@@ -1,0 +1,620 @@
+/* header*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.info{
+    width: 272px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 8px;
+    padding: 12px 16px 12px 24px;
+    gap: 16px;
+}
+.info__name{
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 2px;
+    max-width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.info__avt{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
+.dropdown{
+    width: 24px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+}
+.dropdown__background{
+    display: none;
+    position: absolute;
+    background-color: #191919;
+    opacity: 0.3;
+    width: 100vw;
+    height: 100vh;
+    top: 45px;
+    left: -227px;
+
+}
+.link{
+    display: none;
+    width: 220px;
+    height: 220px;
+    
+}
+.link a{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.dropdown:hover .dropdown__background{
+    display:block;
+    
+}
+.dropdown:hover .link{
+    position: absolute;
+    z-index: 10;
+    top: 23px;
+    left: -190px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 16px;
+    background-color: #ffff;
+}
+.dropdown__img{
+    transition: transform 0.3s ease;
+}
+.dropdown:hover .dropdown__img {
+    transform: rotate(180deg);  
+}
+header{
+    display: flex;
+    align-items: center;
+}
+.searchbar{
+    flex:1;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    border-bottom-right-radius: 10px;
+}
+.search input{
+    border: none;
+    outline: none;
+    width: 97%;
+    height: 100%;
+}
+.search{
+    display: flex;
+    width: 20%;
+    height: 21px;
+    background-color: #fff;
+    gap: 8px;
+    align-items: center;
+}
+/*header*/
+ 
+/* sidebar*/
+main{
+    height: 1000px;
+ 
+    background-color: #f0f0f0;
+}
+.sidebar{
+    height: 968px;
+    width: 17.78%;
+    margin: 0 0 38px 16px;
+    padding-top: 16px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar__content{
+    width: 100%;
+    height: 472px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px 16px 24px 24px;
+    border-radius: 14px;
+    
+}
+.sidebar__content a{
+    height: 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap:24px;
+    width: 96.05%;
+    padding: 8px 14px;
+}
+.dashboard{
+    background: #DAE8FB;
+    color: #2F80ED;
+}
+.version{
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.version h2{
+    font-size: 14px;
+    font-weight: 800;
+}
+.version span{
+    font-size: 12px;
+    font-weight: 400;
+}
+/* sidebar*/
+
+main{
+    display: flex;
+    gap: 16px;
+}
+.contents{
+    height: 968px;
+    
+    margin: 0 23px 38px 0;
+    padding-top: 16px;
+    flex: 1;
+    min-width: 0;
+}
+.contents__charts{
+    height: 100%;
+    width: 85.03%;
+    background-color: #DAE8FB;
+
+}
+.charts__up{
+    width: 100%;
+    height: 472px;
+    display: flex;
+    gap: 16px;
+}
+.chart{
+    height: 100%;
+    width: calc((100% - 16px) / 2);
+    background-color: #fff;
+    border-radius: 14px;
+    max-width: 472px;
+
+}
+.title{
+    width: 100%;
+    height: 87px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 24px 24px 24px;
+}
+.title h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.title span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #828282;
+}
+.chart1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+.phuluc{
+    display: flex;
+    gap: 16px;
+}
+.phuluc__detail{
+    display: flex;
+    gap: 8px;
+}
+.circle{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    
+}
+.brown{
+    background-color:#F4A26C;
+}
+.green{
+    background-color: #3FAEA3;
+}
+.purple{
+background-color: #914DF0;
+}
+.carousel-card{
+flex: 1;
+position: relative;
+overflow: hidden;
+}
+.slides{
+    display: flex;
+    height: 100%;
+    width: 300%;              
+    transition: transform 0.5s ease;
+}
+.card{
+    width: 100%;
+    height: 100%;
+}
+
+
+#c1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#c2:checked ~ .slides {
+    transform: translateX(-33.333%);
+}
+
+#c3:checked ~ .slides {
+    transform: translateX(-66.666%);
+}
+
+.carousel-card input[type="radio"] {
+    display: none;
+}
+
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.dots label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #D1D1D6;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dots label:hover {
+    background-color: #D1D1D6;
+}
+
+#c1:checked ~ .dots label[for="c1"],
+#c2:checked ~ .dots label[for="c2"],
+#c3:checked ~ .dots label[for="c3"] {
+    background-color: #2F80ED;
+}
+
+
+.carousel-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-card input[type="radio"]:checked {
+    
+}
+.arrow {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+   border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2F80ED;
+    transition: background-color 0.3s ease;
+    z-index: 5;
+}
+
+
+.arrow-prev {
+    left: 8px;
+}
+
+.arrow-next {
+    right: 12px;
+}
+
+.arrow-prev-1, .arrow-next-1,
+.arrow-prev-2, .arrow-next-2,
+.arrow-prev-3, .arrow-next-3 {
+    display: none;
+}
+
+
+#c1:checked ~ .arrow-prev-1,
+#c1:checked ~ .arrow-next-1 {
+    display: flex;
+}
+
+#c2:checked ~ .arrow-prev-2,
+#c2:checked ~ .arrow-next-2 {
+    display: flex;
+}
+
+#c3:checked ~ .arrow-prev-3,
+#c3:checked ~ .arrow-next-3 {
+    display: flex;
+}
+/* For carousel 2 with name="d" */
+#d1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#d2:checked ~ .slides {
+    transform: translateX(-33.333%);
+}
+
+#d3:checked ~ .slides {
+    transform: translateX(-66.666%);
+}
+
+#d1:checked ~ .dots2 label[for="d1"],
+#d2:checked ~ .dots2 label[for="d2"],
+#d3:checked ~ .dots2 label[for="d3"] {
+    background-color: #2F80ED;
+}
+/* Arrow visibility for carousel 2 */
+#d1:checked ~ .arrow-prev-1,
+#d1:checked ~ .arrow-next-1 {
+    display: flex;
+}
+
+#d2:checked ~ .arrow-prev-2,
+#d2:checked ~ .arrow-next-2 {
+    display: flex;
+}
+
+#d3:checked ~ .arrow-prev-3,
+#d3:checked ~ .arrow-next-3 {
+    display: flex;
+}
+.phuluc2{
+    display: flex;
+    gap: 16px;
+}
+.phuluc2__detail{
+    display: flex;
+    gap: 8px;
+}
+.red{
+    background-color: #EB5757;
+}
+.yellow{
+    background-color: #EAAB00;
+}
+.brownred{
+    background-color: #A84069;
+}
+.ngocbich{
+    background-color: #00B2A9;
+}
+.blue{
+    background-color: #2D9CDB;
+}
+.tim{
+    background-color: #BB6BD9 ;
+}
+.xanhngoc{
+    background-color: #4CD964;
+}
+.phuluc3{
+    display: flex;
+    gap: 16px;
+    margin-right: 56px;
+}
+.dots2 {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 10;
+}
+
+.dots2 label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #D1D1D6;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dots2 label:hover {
+    background-color: #D1D1D6;
+}
+.title2 {
+    width: 100%;
+    height: 46px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 24px 24px 24px;
+}
+.arrow2 {
+    position: absolute;
+    top: 44%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+   border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2F80ED;
+    transition: background-color 0.3s ease;
+    z-index: 5;
+}
+
+
+
+
+.arrow-prev-1, .arrow-next-1,
+.arrow-prev-2, .arrow-next-2,
+.arrow-prev-3, .arrow-next-3 {
+    display: none;
+}
+.carousel-card {
+    position: relative;
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+}
+.chart__down{
+    display: flex;
+    height: 472px;
+    gap: 16px;
+}
+.contents__charts{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+.chartt{
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #8E8E93;
+
+}
+.tenchart {
+    position: absolute;
+    z-index: 10;
+    top: 29%;
+    font-size: 16px;
+    font-weight: 400;
+    width: 96px;
+    text-align: center;
+}
+.contents{
+    display: flex;
+    gap: 40px;
+}
+.widget{
+    border: none;
+    height: 40px;
+    width: 129px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #27AE60;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border-radius: 23px;
+
+}
+.widget:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1800px) {
+    main{
+        gap: 20px;
+    }
+    .sidebar{
+        width: 16%;
+        margin: 0 0 32px 12px;
+    }
+    .contents{
+        margin: 0 12px 32px 0;
+    }
+    .contents__charts{
+        width: 100%;
+    }
+    .charts__up {
+    width: 100%;
+    height: 472px;
+    display: flex;
+    gap: 20px;
+}
+.chart__down {
+    display: flex;
+    height: 472px;
+    gap: 20px;
+}
+.contents__charts {
+    width: auto;
+    gap: 20px;
+}
+
+}
+  main{
+        gap: 12px;
+    }
+    .sidebar{
+        width: 16%;
+        margin: 0 0 32px 12px;
+    }
+    .contents{
+        margin: 0 12px 32px 0;
+    }
+    .contents__charts{
+        width: 100%;
+    }
+    .contents__charts {
+    width: auto;
+}
+
+
