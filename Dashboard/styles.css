@@ -40,15 +40,17 @@ body{
 }
 .dropdown__background{
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: #191919;
     opacity: 0.3;
-    width: 100vw;
-    height: 100vh;
-    top: 45px;
-    left: -227px;
-
+    width: 100%;
+    min-height: 100vh;
+    margin-top:64px;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
+
 .link{
     display: none;
     width: 220px;
@@ -64,6 +66,9 @@ body{
     font-size: 14px;
     font-weight: 500;
     color: #000000;
+}
+.link a:hover{
+   color: #2F80ED;
 }
 
 .dropdown:hover .dropdown__background{
@@ -115,12 +120,46 @@ header{
     gap: 8px;
     align-items: center;
 }
+header{
+    position: fixed;
+    z-index: 30;
+    left: 0;
+    right: 0;
+    top:0;
+    background-color: #ffffff;
+}
+main{
+    padding-top: 64px;
+}
+.notify{
+    position: relative;
+    cursor: pointer;
+
+}
+.notify .dropped{
+    display: none;
+    position: absolute;
+    top: 36px;
+    right: 0;
+    width: 220px;
+    min-height: 60px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    font-size: 14px;
+    color: #333333;
+    z-index: 10;
+}
+.notify:hover .dropped{
+    display: block;
+}
 /*header*/
  
 /* sidebar*/
 main{
-    height: 1000px;
- 
+    display: flex;
+    gap: 16px;
     background-color: #f0f0f0;
 }
 .sidebar{
@@ -175,15 +214,35 @@ main{
     font-size: 12px;
     font-weight: 400;
 }
+.sidebar {
+   height: auto;
+    width: 17.78%;
+    margin: 0 0 25px 16px;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main{
+    min-height: 100vh;
+}
+body,html{
+    min-height: 100%;
+
+}
+.sidebar__content a{
+    color: #000;
+    transition: all 0.2s ease;
+}
+.sidebar__content a:hover{
+    color: #2F80ED;
+   
+}
 /* sidebar*/
 
-main{
-    display: flex;
-    gap: 16px;
-}
 .contents{
     height: 968px;
-    
+    display: flex;
     margin: 0 23px 38px 0;
     padding-top: 16px;
     flex: 1;
@@ -524,7 +583,7 @@ overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 24px;
-
+    
 }
 .chartt{
     height: 65%;
@@ -544,10 +603,6 @@ overflow: hidden;
     font-weight: 400;
     width: 96px;
     text-align: center;
-}
-.contents{
-    display: flex;
-    gap: 40px;
 }
 .widget{
     border: none;
@@ -569,52 +624,47 @@ overflow: hidden;
     transform: scale(1.05);
 }
 
-@media screen and (max-width: 1800px) {
-    main{
-        gap: 20px;
-    }
-    .sidebar{
-        width: 16%;
-        margin: 0 0 32px 12px;
-    }
-    .contents{
-        margin: 0 12px 32px 0;
-    }
-    .contents__charts{
-        width: 100%;
 
-    .charts__up {
-    width: 100%;
+.charts{
+    width: calc((100% - 16px) / 2);
     height: 472px;
-    display: flex;
-    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 14px;
+
 }
-.chart__down {
+
+.contents {
+    height: 968px;
     display: flex;
-    height: 472px;
-    gap: 20px;
+    justify-content: space-between;
+    margin: 0 23px 38px 0;
+    padding-top: 16px;
+    flex: 1;
+    min-width: 0;
 }
+
+.dashboard{
+    color: #2F80ED !important;
+}
+
 .contents__charts {
-    width: auto;
-    gap: 20px;
+    min-height: 100%;
+    width: 85.03%;
+    background-color: #f0f0f0;
 }
-
+@media screen and (min-width: 2300px) {
+    .info {
+    width: 462px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 8px;
+    padding: 12px 16px 12px 24px;
+    gap: 16px;
 }
-  main{
-        gap: 12px;
-    }
-    .sidebar{
-        width: 16%;
-        margin: 0 0 32px 12px;
-    }
-    .contents{
-        margin: 0 12px 32px 0;
-    }
-    .contents__charts{
-        width: 100%;
-    }
-    .contents__charts {
-    width: auto;
+main {
+    display: flex;
+    gap: 57px;
+    background-color: #f0f0f0;
 }
-
-
+}
