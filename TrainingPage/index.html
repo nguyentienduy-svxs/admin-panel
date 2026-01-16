@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="info">
+            <img class="info__avt" src="../Dashboard/img/15.svg" alt="avt">
+            <h2 class="info__name">Dominique Ch.</h2>
+            <div class="dropdown">
+                <img class="dropdown__img" src="../Dashboard/img/arrow_drop_down.svg" alt="dropdown">
+                <div class="dropdown__background">
+
+                </div>
+                <div class="links">
+                    <a href="../MyDetailPage/index.html">
+                        <img src="../Dashboard/img/baseline-account_circle-24px.svg" alt="circle">
+                        <span>My details</span>
+                    </a>
+                    <a href="#">
+                        <img src="../Dashboard/img/_ionicons_svg_md-calendar.svg" alt="circle">
+                        <span>My calendar</span>
+                    </a>
+                    <a href="../VacationsPage/index.html">
+                        <img src="../Dashboard/img/baseline-beach_access-24px.svg" alt="umbrella">
+                        <span>Vacations</span>
+                    </a>
+                    <a href="#">
+                        <img src="../Dashboard/img/_ionicons_svg_md-document.svg" alt="settings">
+                        <span>Corporate CV</span>
+                    </a>
+                    <a href="#">
+                        <img src="../Dashboard/img/_ionicons_svg_md-rocket.svg" alt="settings">
+                        <span>Performance reviews</span>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="searchbar">
+            <div class="search">
+                <img src="../Dashboard/img/search.svg" alt="search">
+                <input type="text" placeholder="Quick search">
+            </div>
+            <span class="notify"><img src="../Dashboard/img/2 (2).svg" alt="notification">
+                <div class="dropped">
+                    <span>You have no new notifications.</span>
+                </div>
+
+            </span>
+        </div>
+    </header>
+    <main>
+        <div class="sidebar">
+            <div class="sidebar__content">
+                <a class="dashboard" href="../Dashboard/index.html">
+                    <img src="./img/dashboard.svg" alt="settings">
+                    <span>Dashboard</span>
+                </a>
+                <a href="../PeoplePage/index.html">
+                    <img src="./img/people.svg" alt="settings">
+                    <span>People</span>
+                </a>
+                <a href="../ProjectsPage/index.html">
+                    <img src="../Dashboard/img/assignment.svg" alt="settings">
+                    <span>Projects</span>
+                </a>
+                <a href="../CalendarPage/index.html">
+                    <img src="../Dashboard/img/_ionicons_svg_md-calendar.svg" alt="settings">
+                    <span>Calendar</span>
+                </a>
+                <a  class="modify" href="./index.html">
+                    <img src="./img/tivi.svg" alt="settings">
+                    <span>Training</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/donghocat.svg" alt="settings">
+                    <span>Timesheet</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/_ionicons_svg_md-chatbubbles.svg" alt="settings">
+                    <span>Reports</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/company.svg" alt="settings">
+                    <span>Administration</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/chamhoi.svg" alt="settings">
+                    <span>Help</span>
+                </a>
+            </div>
+            <div class="version">
+                <h2>CAMIOCA</h2>
+                <span>Version: 1.0.0.11</span>
+            </div>
+        </div>
+        <div class="maincontents">
+            <div class="tabs">
+                <a class="tab1 link" href="./index.html">
+                   <div class="tab1s">
+                    <img src="./img/_ionicons_svg_md-filing.svg" alt="kinhlup">
+                    <span>Training timetable</span>
+                </div>
+                </a>
+                
+                <a class=" tab2 link" href="../FindTrainingPage/index.html">
+
+                    <div class="tab2s">
+                        <img src="./img/_ionicons_svg_md-search (3).svg" alt="people">
+                        <span>Find training</span>
+                    </div>
+                </a>
+                <a class=" tab2 link" href="../FeedbackPage/index.html">
+
+                    <div class="tab2s">
+                        <img src="./img/_ionicons_svg_md-document (1).svg" alt="people">
+                        <span>Feedback</span>
+                    </div>
+                </a>
+                <a class=" tab2 link" href="../QuizzesPage/index.html">
+
+                    <div class="tab2s">
+                        <img src="./img/_ionicons_svg_md-help.svg" alt="people">
+                        <span>Quizzes</span>
+                    </div>
+                </a>
+                <a class=" tab2 link" href="../TraningRegistrationPage/index.html">
+
+                    <div class="tab2s">
+                        <img src="./img/baseline-assignment_turned_in-24px.svg" alt="people">
+                        <span>Training registration</span>
+                    </div>
+                </a>
+
+            </div>
+            <div class="maincontent__down">
+                <div class="contentup">
+                    <h2>Filter</h2>
+                    <div class="inputgroup">
+                        <div class="containInput">
+                             <div class="date">
+                <h4>Select the date</h4>
+                <div class="date__input">
+                    <div class="input__year">
+                        <img src="../VacationsPage/img/Chevron left.svg" alt="left">
+                        <span>July 2019</span>
+                        
+                        <label class="carlendar" for="date"><img src="../VacationsPage/img/Chevron right.svg" alt="right">
+                        <input type="date"></label>
+                        
+                    </div>
+
+                    <div class="bgcalendar">
+                        <img src="../VacationsPage/img/_ionicons_svg_md-calendar (1).svg" alt="calendar">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row2input__right">
+                                  
+                                    <label for="name">Branch</label>
+                                    <div class="select">
+                                    <select id="city" name="city">
+                                            <option value="pris">Paris</option>
+                                            <option value="hn">Hà Nội</option>
+                                            <option value="hcm">TP.HCM</option>
+                                            <option value="dn">Đà Nẵng</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row2input__right">
+                                  
+                                    <label for="name">Field of knowledge</label>
+                                    <div class="select">
+                                    <select id="city" name="city">
+                                            <option value="pris">All</option>
+                                            <option value="hn">IT</option>
+                                            <option value="hcm">English</option>
+                                            <option value="dn">Marketing</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row2input__right">
+                                  
+                                    <label for="name">Language</label>
+                                    <div class="select">
+                                    <select id="city" name="city">
+                                            <option value="pris">All</option>
+                                            <option value="hn">Java</option>
+                                            <option value="hcm">Python</option>
+                                            <option value="dn">JavaScript</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="note">
+                        <h3>Note: </h3>
+                        <p>Training time is displayed in your local time</p>
+                    </div>
+                    </div>
+                    
+                </div>
+             <table>
+  <thead>
+    <tr>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <!-- Week 1 -->
+    <tr>
+      <td class="modified one">
+        <div>
+          <span class="modi">1</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="modified one">
+        <div>
+          <span class="modi">2</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="modified one">
+        <div>
+          <span class="modi">3</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="modified one">
+        <div>
+          <span class="modi">4</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="modified one">
+        <div>
+          <span class="modi">5</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="modified one">
+        <div>
+          <span class="modi">6</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="modified one">
+        <div>
+          <span class="modi">7</span>
+          <span>July</span>
+        </div>
+      </td>
+    </tr>
+
+    <!-- Week 2 -->
+    <tr>
+      <td class="modified one">
+        <div>
+          <span class="modi">8</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="modified one">
+        <div>
+          <span class="modi">9</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="special">
+        <div class="contain__div">
+            <div class="left">
+           <div class="left__up">
+            <span class="hour">10:00</span>
+            <span>Management in Parliament</span>
+           </div>
+           <div class="left__down">
+            <div class="green"><span>paris</span></div>
+            <div class="blue"><span>online</span></div>
+           </div>
+            </div>
+            <div class="right">
+                <span class="change">10</span>
+                <span>July</span>
+            </div>
+         
+        </div>
+    </td>
+      <td class="one">
+        <div>
+          <span class="modi">11</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">12</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">13</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">14</span>
+          <span>July</span>
+        </div>
+      </td>
+    </tr>
+
+    <!-- Week 3 -->
+    <tr>
+      <td class="one">
+        <div>
+          <span class="modi">15</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">16</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">17</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">18</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">19</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">20</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">21</span>
+          <span>July</span>
+        </div>
+      </td>
+    </tr>
+
+    <!-- Week 4 -->
+    <tr>
+      <td class="one">
+        <div>
+          <span class="modi">22</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">23</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">24</span>
+          <span>July</span>
+        </div>
+      </td>
+       <td class="special specialmodify">
+        <div class="contain__div">
+            <div class="left">
+           <div class="left__up">
+            <span class="hour">10:00</span>
+            <span>Qualification P1</span>
+           
+
+           </div>
+           <div class="left__down">
+            <div class="green"><span>paris</span></div>
+            
+           </div>
+            </div>
+            <div class="right">
+                <span class="modi2" >25</span>
+                <span>July</span>
+            </div>
+         
+        </div>
+    </td>
+      <td class="one">
+        <div>
+          <span class="modi">26</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">27</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">28</span>
+          <span>July</span>
+        </div>
+      </td>
+      
+    </tr>
+     <tr>
+      <td class="one">
+        <div>
+          <span class="modi">29</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">30</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">31</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">1</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">2</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">3</span>
+          <span>July</span>
+        </div>
+      </td>
+      <td class="one">
+        <div>
+          <span class="modi">4</span>
+          <span>July</span>
+        </div>
+      </td>
+    </tr>
+ 
+  </tbody>
+</table>
+
+
+            </div>
+            </main>

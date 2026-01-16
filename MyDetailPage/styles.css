@@ -239,7 +239,7 @@ body,html{
 }
 .sidebar__content a:hover{
     color: #2F80ED;
-   
+    
 }
 /* sidebar*/
 
@@ -272,7 +272,7 @@ body,html{
 }
 .main__info{
      width: 81.22%;
-    height: 709px;
+    height: 779px;
     margin-top: 16px;
     display: flex;
     flex-direction: column;
@@ -353,6 +353,9 @@ body,html{
     background-color: #F1F1F1;
     font-size: 14px;
     font-weight: 400;
+    appearance: none;
+    background:#f1f1f1 url(./img/arrow_drop_down.svg) no-repeat right 14px center;
+    cursor: pointer;
 }
 .input__left{
     display: flex;
@@ -366,7 +369,7 @@ body,html{
 }
 .empty{
     width: 100%;
-    height: 14px;
+    height: 14.4px;
 }
 .maincontents__right{
     height: 100%;
@@ -552,6 +555,7 @@ h2{
     border-radius: 6px;
     padding: 8px 4px;
 }
+
 .checkfil:checked ~ .dropss{
     display: block;
     position: absolute;
@@ -587,9 +591,13 @@ h2{
 }
 .maincontents__down{
     position: relative;
+    height: 88px;
+    transition: all 0.3s ease;
+}
+.maincontents__down:has(.check:checked){
     height: 221px;
 }
-.collapsible .table{
+/*.collapsible .table{
     display: none;
 }
 .collapsible .check:checked ~ .table{
@@ -599,6 +607,53 @@ h2{
     left: 0;
     z-index: 20;
 }
+    */
+.table{
+  position: absolute;
+    top: 40%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    left: 0px;
+} 
+.collapsible .check:checked ~ .table {
+    top: 70px;
+    opacity: 1;
+    position: absolute;
+    left: 0px;
+    z-index: 20;
+}
+.collapsible img{
+    position: absolute;
+    z-index: 30;
+    right: 11px;
+}
+
+.infil img{
+    position: absolute;
+    z-index: 30;
+    right: 0;
+    top:-11px;
+    cursor: pointer;
+}
+.checkfil:checked ~ .dropss {
+    display: block;
+    position: absolute;
+    border: #2F80ED 1.5px solid;
+    left: -170px;
+    width: 184px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 8px 4px;
+    z-index: 30;
+}
+.filter{
+    position: relative;
+}
+
 .projects-tables{
     opacity: 0;
 }
@@ -608,6 +663,21 @@ h2{
 .collapsible .check:checked ~ label img{
     transform: rotate(180deg);
 }
+ tbody tr:hover {
+    background-color: #eef4ff;
+}
+.filterform{
+    cursor: pointer;
+   
+}
+.checkimg img{
+   top: 30px;
+    right: 10px
+}
+.heads{
+    cursor: pointer;
+}
+
 @media screen and (min-width: 1600px) {
     .row label {
       
@@ -621,11 +691,11 @@ h2{
 @media screen and (min-width: 2000px) {
     .row label {
       
-        font-size: 20px;
+        font-size: 15px;
     }
     .row2input label {
       
-        font-size: 20px;
+        font-size: 15px;
     }
     h2 {
     font-size: 24px;
@@ -645,4 +715,93 @@ h2{
     font-size: 20px;
     font-weight: 400;
 }
+
+}
+@media screen and (min-width: 1800px){
+.sidebar__content a{
+    font-size: 15px;
+}
+.sidebar {
+    height: auto;
+    width: 15.78%;
+}
+}
+.row2input label {
+        font-size: 12px;
+        height: 14.4px;
+    }
+    .empty {
+        width: 100%;
+        height: 14.4px;
+    }
+
+@media screen and (min-width: 2000px){
+.sidebar__content a{
+    font-size: 15px;
+}
+.sidebar {
+    height: auto;
+    width: 11.78%;
+}
+.row2input label {
+        font-size: 15px;
+        height: 18.4px;
+    }
+    .empty {
+        width: 100%;
+        height: 18.4px;
+}
+
+.sidebar__content a{
+    transition: all 0.2s ease;
+}
+.sidebar__content a:hover{
+    background-color: #E0E0E0;
+   
+}
+.filter img{
+    cursor: pointer;
+}
+.collapsible img{
+    cursor: pointer;
+}
+.status-dots {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #ff0000;
+    border-radius: 50%;
+}
+}
+.status-dots {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #ff0000;
+    border-radius: 50%;
+}
+.info:hover .dropdown__background{
+    display:block;
+    
+}
+.info:hover .link {
+    position: absolute;
+    z-index: 10;
+    top: 23px;
+    left: -190px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 16px;
+    background-color: #ffff;
+}
+.info .dropdown__img{
+    transition: transform 0.3s ease;
+}
+.info:hover .dropdown__img {
+    transform: rotate(180deg);  
+}
+img{
+    cursor: pointer;
 }

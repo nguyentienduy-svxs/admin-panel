@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="info">
+            <img class="info__avt" src="../Dashboard/img/15.svg" alt="avt">
+            <h2 class="info__name">Dominique Ch.</h2>
+            <div class="dropdown">
+                <img class="dropdown__img" src="../Dashboard/img/arrow_drop_down.svg" alt="dropdown">
+                <div class="dropdown__background">
+
+                </div>
+                <div class="links">
+                    <a href="../MyDetailPage/index.html">
+                        <img src="../Dashboard/img/baseline-account_circle-24px.svg" alt="circle">
+                        <span>My details</span>
+                    </a>
+                    <a href="#">
+                        <img src="../Dashboard/img/_ionicons_svg_md-calendar.svg" alt="circle">
+                        <span>My calendar</span>
+                    </a>
+                    <a href="../VacationsPage/index.html">
+                        <img src="../Dashboard/img/baseline-beach_access-24px.svg" alt="umbrella">
+                        <span>Vacations</span>
+                    </a>
+                    <a href="#">
+                        <img src="../Dashboard/img/_ionicons_svg_md-document.svg" alt="settings">
+                        <span>Corporate CV</span>
+                    </a>
+                    <a href="#">
+                        <img src="../Dashboard/img/_ionicons_svg_md-rocket.svg" alt="settings">
+                        <span>Performance reviews</span>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="searchbar">
+            <div class="search">
+                <img src="../Dashboard/img/search.svg" alt="search">
+                <input type="text" placeholder="Quick search">
+            </div>
+            <span class="notify"><img src="../Dashboard/img/2 (2).svg" alt="notification">
+                <div class="dropped">
+                    <span>You have no new notifications.</span>
+                </div>
+
+            </span>
+        </div>
+    </header>
+    <main>
+        <div class="sidebar">
+            <div class="sidebar__content">
+                <a class="dashboard" href="../Dashboard/index.html">
+                    <img src="./img/dashboard.svg" alt="settings">
+                    <span>Dashboard</span>
+                </a>
+                <a href="./index.html">
+                    <img src="./img/people.svg" alt="settings">
+                    <span>People</span>
+                </a>
+                <a href="../ProjectsPage/index.html">
+                    <img src="../Dashboard/img/assignment.svg" alt="settings">
+                    <span>Projects</span>
+                </a>
+                <a href="../CalendarPage/index.html">
+                    <img src="../Dashboard/img/_ionicons_svg_md-calendar.svg" alt="settings">
+                    <span>Calendar</span>
+                </a>
+                <a href="../TrainingPage/index.html">
+                    <img src="../Dashboard/img/_ionicons_svg_md-easel.svg" alt="settings">
+                    <span>Training</span>
+                </a>
+                <a class="modify" href="#">
+                    <img src="./img/dongho.svg" alt="settings">
+                    <span>Timesheet</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/_ionicons_svg_md-chatbubbles.svg" alt="settings">
+                    <span>Reports</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/company.svg" alt="settings">
+                    <span>Administration</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/chamhoi.svg" alt="settings">
+                    <span>Help</span>
+                </a>
+            </div>
+            <div class="version">
+                <h2>CAMIOCA</h2>
+                <span>Version: 1.0.0.11</span>
+            </div>
+        </div>
+        <div class="maincontents">
+            <div class="mytimesheet">
+                <h2>My Timesheet</h2>
+                <div class="containing">
+                    <div class="containing__left">
+                        <div class="date">
+                            <h4>Select the date</h4>
+                            <div class="date__input">
+                                <div class="input__year">
+                                    <img src="../VacationsPage/img/Chevron left.svg" alt="left">
+                                    <span>2019</span>
+
+                                    <label class="carlendar" for="date"><img
+                                            src="../VacationsPage/img/Chevron right.svg" alt="right">
+                                        <input type="date"></label>
+
+                                </div>
+
+                                <div class="bgcalendar">
+                                    <img src="../VacationsPage/img/_ionicons_svg_md-calendar (1).svg" alt="calendar">
+
+                                </div>
+                                <div class="bgcalendar">
+                                    <img src="./img/_ionicons_svg_md-refresh.svg" alt="calendar">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="containing__btn">My timesheet's report</button>
+                </div>
+            </div>
+            <div class="block2">
+                <div class="framework">
+                    <div class="block2__up">
+                        <div class="up__left">
+                            <img class="remove" src="./img/_ionicons_svg_md-remove-circle-outline.svg" alt="remove">
+                            <div class="row2input__right right__big">
+
+                                <label for="name">Project</label>
+                                <div class="select">
+                                    <select id="city" name="city">
+                                        <option value="pris">E_Interview</option>
+                                        <option value="hn">Hà Nội</option>
+                                        <option value="hcm">TP.HCM</option>
+                                        <option value="dn">Đà Nẵng</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row2input__right right__small1">
+
+                                <label for="name">Role</label>
+                                <div class="select">
+                                    <select id="city" class="citys" name="city">
+                                        <option value="pris">Select</option>
+                                        <option value="hn">Hà Nội</option>
+                                        <option value="hcm">TP.HCM</option>
+                                        <option value="dn">Đà Nẵng</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row2input__right right__small2">
+
+                                <label for="name">Activity</label>
+                                <div class="select">
+                                    <select id="city" class="citys" name="city">
+                                        <option value="pris">Select</option>
+                                        <option value="hn">Hà Nội</option>
+                                        <option value="hcm">TP.HCM</option>
+                                        <option value="dn">Đà Nẵng</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="up__right">
+                            <div class="contain__card">
+                                <span class="month">15 / Mon</span>
+                                <div class="card">
+                                    <span>4.00</span>
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                            <div class="contain__card">
+                                <span class="month month2">16 / Tue</span>
+                                <div class="card card2">
+
+                                </div>
+                            </div>
+                            <div class="contain__card">
+                                <span class="month month3">17 / Wed</span>
+                                <div class="card card3">
+
+                                </div>
+                            </div>
+                            <div class="contain__card">
+                                <span class="month month3">18 / Thu</span>
+                                <div class="card card3">
+
+                                </div>
+                            </div>
+                            <div class="contain__card">
+                                <span class="month month3">19 / Fri</span>
+                                <div class="card card3">
+
+                                </div>
+                            </div>
+                            <div class="contain__card">
+                                <span class="month month4">20 / Sat</span>
+                                <div class="card card3">
+
+                                </div>
+                            </div>
+                            <div class="contain__card">
+                                <span class="month month4">21 / Sun</span>
+                                <div class="card card3">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block2__down">
+                        <div class="up__left">
+                            <img class="removed" src="./img/_ionicons_svg_md-remove-circle-outline.svg" alt="remove">
+                            <div class="row2input__right right__big">
+
+
+                                <div class="select">
+                                    <select id="city" name="city">
+                                        <option value="pris">E_Bench_Engineering</option>
+                                        <option value="hn">Hà Nội</option>
+                                        <option value="hcm">TP.HCM</option>
+                                        <option value="dn">Đà Nẵng</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row2input__right right__small1">
+
+
+                                <div class="select">
+                                    <select id="city" class="citys" name="city">
+                                        <option value="pris">Select</option>
+                                        <option value="hn">Hà Nội</option>
+                                        <option value="hcm">TP.HCM</option>
+                                        <option value="dn">Đà Nẵng</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row2input__right right__small2">
+
+
+                                <div class="select">
+                                    <select id="city" class="citys" name="city">
+                                        <option value="pris">Select</option>
+                                        <option value="hn">Hà Nội</option>
+                                        <option value="hcm">TP.HCM</option>
+                                        <option value="dn">Đà Nẵng</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="up__right">
+                            <div class="contain__card">
+
+                                <div class="card">
+                                    <span>4.00</span>
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                            <div class="contain__card">
+
+                                <div class="card card2">
+
+                                </div>
+                            </div>
+                            <div class="contain__card">
+
+                                <div class="card card3">
+
+                                </div>
+                            </div>
+                            <div class="contain__card">
+
+                                <div class="card card3">
+
+                                </div>
+                            </div>
+                            <div class="contain__card">
+
+                                <div class="card card3">
+
+                                </div>
+                            </div>
+                            <div class="contain__card">
+
+                                <div class="card card3">
+
+                                </div>
+                            </div>
+                            <div class="contain__card">
+
+                                <div class="card card3">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="containbuttons">
+                    <div class="buttonleft">
+                        <button class="button1"> <img src="./img/Add (2).svg" alt="bt"> <span>Add row</span></button>
+                        <button class="button2"><img src="./img/Add (3).svg" alt="bt"> <span>Add
+                                overtime</span></button>
+                    </div>
+                    <div class="buttonright">
+                        <button class="button3">Save</button>
+                        <button class="button4">Reject</button>
+                        <button class="button5">Submit</button>
+                    </div>
+                </div>
+                <div class="final">
+                    <img src="./img/ic-outline-info.svg" alt="x">
+                    <div class="final__text">
+                        <span class="modif">Total: </span>
+                        <span class="changes">8.00/40.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="maincontents__down">
+                <label for="checked"><div class="heads">
+                    <h2>Projects</h2>
+                    <div class="heads__right">
+
+                        <div class="collapsible">
+                            <input class="check" type="checkbox" id="checked" hidden />
+                            <label class="checkimg" for="checked"><img src="./img/Expand more.svg" alt="expand"></label>
+
+                            <div class="table">
+
+                                <table class="projects-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th class="project">Project Task</th>
+                                            <th>Role</th>
+                                            <th>Activity</th>
+                                            <th>Hours</th>
+                                            <th>Comments</th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>15 Jan</td>
+                                            <td class="project">Project 1</td>
+                                            <td>Specialist</td>
+                                            <td>Development</td>
+                                            <td>8.0</td>
+                                            <td>Prepared a presentation for CEO</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>16 Jan</td>
+                                            <td class="project">Project 2</td>
+                                            <td>Development</td>
+                                            <td>8.00</td>
+                                            <td>12.02.2019</td>
+                                            <td>Planned employees vacations</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </label>
+
+            </div>
+            <div class="block4">
+                <div class="block4__left">
+                    <div class="maincontents__down maincontents__downvip">
+                        <label for="checkedx"><div class="heads">
+                            <h2 class="fix">Projects you are assigned to (12)</h2>
+                            <div class="heads__right">
+
+                                <div class="collapsible">
+                                    <input class="check checkvip" type="checkbox" id="checkedx" hidden />
+                                    <label class="checkimg" for="checkedx"><img src="./img/Expand more.svg"
+                                            alt="expand"></label>
+
+                                    <div class="table tablevip">
+                                        <span class="tag active">E_Bench_Engineering</span>
+                                        <span class="tag active">E_Interview</span>
+
+                                        <span class="tag">E_Company_Web_Site</span>
+                                        <span class="tag">E_CNSL_Corp_Events</span>
+                                        <span class="tag">E_CNSL_Delivery_Admin</span>
+
+                                        <span class="tag">E_CNSL_Delivery_Admin</span>
+                                        <span class="tag">E_ENG_Delivery_Admin</span>
+                                        <span class="tag">E_ENG_Corp_Events</span>
+                                        <span class="tag">E_Performance_Evaluations</span>
+
+                                        <span class="tag">E_Community_of_Practice</span>
+                                        <span class="tag">E_Marketing and Training Support</span>
+                                        <span class="tag">E_VFQ_Upskilling</span>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </label>
+
+                    </div>
+                </div>
+                <div class="block4__right">
+                        <h2 class="legend">Legend</h2>
+                        <div class="legend__items">
+                            <div class="inner">
+                            <div class=" card legend__card">
+                                    <span>4.00</span>
+                                    <div class="circle"></div>
+                                </div>
+                                <span>Workday</span>
+                        </div>
+                        <div class="inner">
+                            <div class=" card legend__card card__red">
+                                    <span>8.00</span>
+                                    <div class="circle"></div>
+                                </div>
+                                <span>Holiday</span>
+                        </div>
+                        <div class="inner">
+                            <div class=" card legend__card card__nothing">
+                                   
+                                </div>
+                                <span>Today</span>
+                        </div>
+                        <div class="inner">
+                            <div class=" card legend__card card__green">
+                                    
+                                    <div class="circle"></div>
+                                </div>
+                                <span>Day of had (paid)</span>
+                        </div>
+                         <div class="inner">
+                            <div class=" card legend__card card__orange">
+                                    <span>8.00</span>
+                                    <div class="circle"></div>
+                                </div>
+                                <span>Overtime/undertime</span>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>

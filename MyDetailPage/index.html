@@ -73,15 +73,15 @@
                     <img src="../Dashboard/img/people.svg" alt="settings">
                     <span>People</span>
                 </a>
-                <a href="#">
+                <a href="../ProjectsPage/index.html">
                     <img src="../Dashboard/img/assignment.svg" alt="settings">
                     <span>Projects</span>
                 </a>
-                <a href="#">
+                <a href="../CalendarPage/index.html">
                     <img src="../Dashboard/img/_ionicons_svg_md-calendar.svg" alt="settings">
                     <span>Calendar</span>
                 </a>
-                <a href="#">
+                <a href="../TrainingPage/index.html">
                     <img src="../Dashboard/img/_ionicons_svg_md-easel.svg" alt="settings">
                     <span>Training</span>
                 </a>
@@ -118,17 +118,17 @@
                         <div class="input__left">
                             <div class="row">
                                 <label for="name">Name</label>
-                                <input type="text" id="name" placeholder="Dominique Charpentier">
+                                <input type="text" id="name" value="Dominique Charpentier">
                             </div>
                             <div class="row2input">
                                 <div class="row2input__left">
                                     <label for="name">Practice</label>
-                                    <input type="text" id="name" placeholder="Finance">
+                                    <input type="text" id="name" value="Finance">
                                 </div>
                                 <div class="row2input__right">
                                     <label for="name">Branch</label>
                                     <div class="select">
-                                        <select id="city" name="city">
+                                    <select id="city" name="city">
                                             <option value="pris">Paris</option>
                                             <option value="hn">Hà Nội</option>
                                             <option value="hcm">TP.HCM</option>
@@ -140,44 +140,44 @@
                             </div>
                             <div class="row">
                                 <label for="name">Division</label>
-                                <input type="text" id="name" placeholder="Moonlight - Paris">
+                                <input type="text" id="name" value="Moonlight - Paris">
                             </div>
                             <div class="row">
                                 <label for="name">Login</label>
-                                <input type="text" id="name" placeholder="id/ceo">
+                                <input type="text" id="name" value="id/ceo">
                             </div>
                         </div>
                         <div class="input__left">
                             <div class="row">
                                 <label for="name">Title</label>
-                                <input type="text" id="name" placeholder="CEO">
+                                <input type="text" id="name" value="CEO">
                             </div>
                             <div class="row2input">
                                 <div class="row2input__left">
                                     <label for="name">Contract</label>
-                                    <input type="text" id="name" placeholder="Employee">
+                                    <input type="text" id="name" value="Employee">
                                 </div>
                                 <div class="row2input__right">
                                     <div class="select">
                                         <label for="name">Grade</label>
-                                        <input type="text" id="name" placeholder="MG3">
+                                        <input type="text" id="name" value="MG3">
                                     </div>
                                 </div>
 
                             </div>
                             <div class="row">
                                 <label for="name">Division manager</label>
-                                <input type="text" id="name" placeholder="">
+                                <input type="text" id="name" value="">
                             </div>
                             <div class="row2input">
                                 <div class="row2input__left">
                                     <label for="name">Status history</label>
-                                    <input type="text" id="name" placeholder="Activated">
+                                    <input type="text" id="name" value="Activated">
                                 </div>
                                 <div class="row2input__right">
                                     <div class="select">
                                         <div class="empty"></div>
-                                        <input type="text" id="name" placeholder="13/05/2009">
+                                        <input type="text" id="name" value="13/05/2009">
                                     </div>
                                 </div>
 
@@ -222,14 +222,14 @@
             </div>
             <!--Reuse-->
             <div class="maincontents__down">
-                <div class="heads">
+                <label class="infil" for="checked"><div class="heads">
                     <h2>Projects</h2>
                     <div class="heads__right">
                         <div class="filterform">
                             <span>Filter</span>
                             <span class="filter">
                                 <input class=checkfil type="checkbox" id="check" hidden/>
-                                <label class="infil" for="check"><img src="./img/arrow_drop_down.svg" alt="dropdown"></label>
+                                <label class="infil" for="check"><img src="./img/dropdownblue.svg" alt="dropdown"></label>
                                 
                                 <div class="dropss">
                                     <span>A-Z</span>
@@ -240,8 +240,8 @@
                             </span>
                         </div>
                         <div class="collapsible">
-                            <input class="check" type="checkbox" id="checked" hidden/>
-                            <label for="checked"><img src="./img/Expand more.svg" alt="expand"></label>
+                            <input class="check" type="checkbox" id="checked" hidden />
+                            <label class="checkimg" for="checked"><img src="./img/Expand more.svg" alt="expand"></label>
                             
                             <div class="table">
 
@@ -276,7 +276,7 @@
 
                             </tr>
                             <tr>
-                                <td><span class="status-dot"></span></td>
+                                <td><span class="status-dots"></span></td>
                                 <td class="project">Project 2</td>
                                 <td>Specialist</td>
                                 <td>Support</td>
@@ -295,55 +295,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="table">
-
-                    <table class="projects-tables">
-                        <thead>
-                            <tr>
-                                <th>Status</th>
-                                <th class="project">Project Task</th>
-                                <th>Role</th>
-                                <th>Task</th>
-                                <th>Start date</th>
-                                <th>Capacity</th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span class="status-dot"></span></td>
-                                <td class="project">Project 1</td>
-                                <td>Specialist</td>
-                                <td>Management</td>
-                                <td>11.06.2019</td>
-                                <td>35%</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-
-                            </tr>
-                            <tr>
-                                <td><span class="status-dot"></span></td>
-                                <td class="project">Project 2</td>
-                                <td>Specialist</td>
-                                <td>Support</td>
-                                <td>12.02.2019</td>
-                                <td>65%</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
+                </label>
+                
             </div>
     </main>
 </body>

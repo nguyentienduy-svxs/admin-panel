@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="info">
+            <img class="info__avt" src="../Dashboard/img/15.svg" alt="avt">
+            <h2 class="info__name">Dominique Ch.</h2>
+            <div class="dropdown">
+                <img class="dropdown__img" src="../Dashboard/img/arrow_drop_down.svg" alt="dropdown">
+                <div class="dropdown__background">
+
+                </div>
+                <div class="link">
+                    <a href="../MyDetailPage/index.html">
+                        <img src="../Dashboard/img/baseline-account_circle-24px.svg" alt="circle">
+                        <span>My details</span>
+                    </a>
+                    <a href="#">
+                        <img src="../Dashboard/img/_ionicons_svg_md-calendar.svg" alt="circle">
+                        <span>My calendar</span>
+                    </a>
+                    <a href="../VacationsPage/index.html">
+                        <img src="../Dashboard/img/baseline-beach_access-24px.svg" alt="umbrella">
+                        <span>Vacations</span>
+                    </a>
+                    <a href="#">
+                        <img src="../Dashboard/img/_ionicons_svg_md-document.svg" alt="settings">
+                        <span>Corporate CV</span>
+                    </a>
+                    <a href="#">
+                        <img src="../Dashboard/img/_ionicons_svg_md-rocket.svg" alt="settings">
+                        <span>Performance reviews</span>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="searchbar">
+            <div class="search">
+                <img src="../Dashboard/img/search.svg" alt="search">
+                <input type="text" placeholder="Quick search">
+            </div>
+            <span class="notify"><img src="../Dashboard/img/2 (2).svg" alt="notification">
+                <div class="dropped">
+                    <span>You have no new notifications.</span>
+                </div>
+
+            </span>
+        </div>
+    </header>
+    <main>
+        <div class="sidebar">
+            <div class="sidebar__content">
+                <a class="dashboard" href="../Dashboard/index.html">
+                    <img src="./img/dashboard.svg" alt="settings">
+                    <span>Dashboard</span>
+                </a>
+                <a href="../PeoplePage/index.html">
+                    <img src="../Dashboard/img/people.svg" alt="settings">
+                    <span>People</span>
+                </a>
+                <a href="../ProjectsPage/index.html">
+                    <img src="../Dashboard/img/assignment.svg" alt="settings">
+                    <span>Projects</span>
+                </a>
+                <a class="modify" href="./index.html">
+                    <img src="./img/_ionicons_svg_md-calendar.svg" alt="settings">
+                    <span>Calendar</span>
+                </a>
+                <a href="../TrainingPage/index.html">
+                    <img src="../Dashboard/img/_ionicons_svg_md-easel.svg" alt="settings">
+                    <span>Training</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/donghocat.svg" alt="settings">
+                    <span>Timesheet</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/_ionicons_svg_md-chatbubbles.svg" alt="settings">
+                    <span>Reports</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/company.svg" alt="settings">
+                    <span>Administration</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/chamhoi.svg" alt="settings">
+                    <span>Help</span>
+                </a>
+            </div>
+            <div class="version">
+                <h2>CAMIOCA</h2>
+                <span>Version: 1.0.0.11</span>
+            </div>
+        </div>
+        <div class="maincontent">
+            <div class="maincontent__up">
+                <h2>Time management</h2>
+                <div class="up__content">
+                    <div class="left">
+                        <div class="row2input__right">
+                            <label for="name">Branch</label>
+                            <div class="select">
+                                <select id="city" name="city">
+                                    <option value="pris">Paris</option>
+                                    <option value="hn">Hà Nội</option>
+                                    <option value="hcm">TP.HCM</option>
+                                    <option value="dn">Đà Nẵng</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="date">
+                            <h4>Select the date</h4>
+                            <div class="date__input">
+                                <div class="input__year">
+                                    <img src="../VacationsPage/img/Chevron left.svg" alt="left">
+                                    <span>2019</span>
+
+                                    <label class="carlendar" for="date"><img
+                                            src="../VacationsPage/img/Chevron right.svg" alt="right">
+                                        <input type="date"></label>
+
+                                </div>
+
+                                <div class="bgcalendar">
+                                    <img src="../VacationsPage/img/_ionicons_svg_md-calendar (1).svg" alt="calendar">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="differ">
+                        <div class="textleft">
+                            <h3>247</h3>
+                            <span>working days</span>
+                        </div>
+                        <hr />
+                        <div class="textright">
+                            <h3>118</h3>
+                            <span>non-working days</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="maincontent__down">
+                <div class="drawcalendar">
+                    <h3>January</h3>
+                    <div class="soLich">
+
+
+
+                        <div class="calendar-days">
+                            <div class="thu">
+                                <span>Mo</span>
+                                <span>Tu</span>
+                                <span>We</span>
+                                <span>Th</span>
+                                <span>Fr</span>
+                                <span class="weekend">Sa</span>
+                                <span class="weekend">Su</span>
+                            </div>
+                            <!-- week 1 -->
+                            <div class="row">
+                                <span></span>
+                                <span></span>
+                                <span class="holiday">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span class="holiday">5</span>
+                                <span class="holiday">6</span>
+                            </div>
+
+                            <!-- week 2 -->
+                            <div class="row">
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>11</span>
+                                <span class="holiday">12</span>
+                                <span class="holiday">13</span>
+                            </div>
+                            <!-- week 3 -->
+                            <div class="row">
+                                <span>14</span>
+                                <span>15</span>
+                                <span>16</span>
+                                <span>17</span>
+                                <span>18</span>
+                                <span class="holiday">19</span>
+                                <span class="holiday">20</span>
+                            </div>
+                            <!-- week 4 -->
+                            <div class="row">
+                                <span>21</span>
+                                <span class="selected">22</span>
+                                <span>23</span>
+                                <span>24</span>
+                                <span>25</span>
+                                <span class="holiday">26</span>
+                                <span class="holiday">27</span>
+                            </div>
+                            <!-- week 5 -->
+                            <div class="row">
+                                <span>28</span>
+                                <span>29</span>
+                                <span>30</span>
+                                <span>31</span>
+                            </div>
+                        </div>
+                        <div class="calendar-summary">
+                            <div class="working">
+                                <span>Working days:</span>
+                                <strong>19</strong>
+                            </div>
+                            <hr>
+                            <div class="non-working">
+                                <span>Non-working days:</span>
+                                <strong>8</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawcalendar">
+                    <h3>February</h3>
+                    <div class="soLich">
+
+
+
+                        <div class="calendar-days">
+                            <div class="thu">
+                                <span>Mo</span>
+                                <span>Tu</span>
+                                <span>We</span>
+                                <span>Th</span>
+                                <span>Fr</span>
+                                <span class="weekend">Sa</span>
+                                <span class="weekend">Su</span>
+                            </div>
+                            <!-- week 1 -->
+                            <div class="row">
+                                <span></span>
+                                <span></span>
+                                <span class="holiday">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span class="holiday">5</span>
+                                <span class="holiday">6</span>
+                            </div>
+
+                            <!-- week 2 -->
+                            <div class="row">
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>11</span>
+                                <span class="holiday">12</span>
+                                <span class="holiday">13</span>
+                            </div>
+                            <!-- week 3 -->
+                            <div class="row">
+                                <span>14</span>
+                                <span>15</span>
+                                <span>16</span>
+                                <span>17</span>
+                                <span>18</span>
+                                <span class="holiday">19</span>
+                                <span class="holiday">20</span>
+                            </div>
+                            <!-- week 4 -->
+                            <div class="row">
+                                <span>21</span>
+                                <span class="selected">22</span>
+                                <span>23</span>
+                                <span>24</span>
+                                <span>25</span>
+                                <span class="holiday">26</span>
+                                <span class="holiday">27</span>
+                            </div>
+                            <!-- week 5 -->
+                            <div class="row">
+                                <span>28</span>
+                                <span>29</span>
+                                <span>30</span>
+                                <span>31</span>
+                            </div>
+                        </div>
+                        <div class="calendar-summary">
+                            <div class="working">
+                                <span>Working days:</span>
+                                <strong>19</strong>
+                            </div>
+                            <hr>
+                            <div class="non-working">
+                                <span>Non-working days:</span>
+                                <strong>8</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawcalendar">
+                    <h3>March</h3>
+                    <div class="soLich">
+
+
+
+                        <div class="calendar-days">
+                            <div class="thu">
+                                <span>Mo</span>
+                                <span>Tu</span>
+                                <span>We</span>
+                                <span>Th</span>
+                                <span>Fr</span>
+                                <span class="weekend">Sa</span>
+                                <span class="weekend">Su</span>
+                            </div>
+                            <!-- week 1 -->
+                            <div class="row">
+                                <span></span>
+                                <span></span>
+                                <span class="holiday">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span class="holiday">5</span>
+                                <span class="holiday">6</span>
+                            </div>
+
+                            <!-- week 2 -->
+                            <div class="row">
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>11</span>
+                                <span class="holiday">12</span>
+                                <span class="holiday">13</span>
+                            </div>
+                            <!-- week 3 -->
+                            <div class="row">
+                                <span>14</span>
+                                <span>15</span>
+                                <span>16</span>
+                                <span>17</span>
+                                <span>18</span>
+                                <span class="holiday">19</span>
+                                <span class="holiday">20</span>
+                            </div>
+                            <!-- week 4 -->
+                            <div class="row">
+                                <span>21</span>
+                                <span class="selected">22</span>
+                                <span>23</span>
+                                <span>24</span>
+                                <span>25</span>
+                                <span class="holiday">26</span>
+                                <span class="holiday">27</span>
+                            </div>
+                            <!-- week 5 -->
+                            <div class="row">
+                                <span>28</span>
+                                <span>29</span>
+                                <span>30</span>
+                                <span>31</span>
+                            </div>
+                        </div>
+                        <div class="calendar-summary">
+                            <div class="working">
+                                <span>Working days:</span>
+                                <strong>19</strong>
+                            </div>
+                            <hr>
+                            <div class="non-working">
+                                <span>Non-working days:</span>
+                                <strong>8</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawcalendar">
+                    <h3>April</h3>
+                    <div class="soLich">
+
+
+
+                        <div class="calendar-days">
+                            <div class="thu">
+                                <span>Mo</span>
+                                <span>Tu</span>
+                                <span>We</span>
+                                <span>Th</span>
+                                <span>Fr</span>
+                                <span class="weekend">Sa</span>
+                                <span class="weekend">Su</span>
+                            </div>
+                            <!-- week 1 -->
+                            <div class="row">
+                                <span></span>
+                                <span></span>
+                                <span class="holiday">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span class="holiday">5</span>
+                                <span class="holiday">6</span>
+                            </div>
+
+                            <!-- week 2 -->
+                            <div class="row">
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>11</span>
+                                <span class="holiday">12</span>
+                                <span class="holiday">13</span>
+                            </div>
+                            <!-- week 3 -->
+                            <div class="row">
+                                <span>14</span>
+                                <span>15</span>
+                                <span>16</span>
+                                <span>17</span>
+                                <span>18</span>
+                                <span class="holiday">19</span>
+                                <span class="holiday">20</span>
+                            </div>
+                            <!-- week 4 -->
+                            <div class="row">
+                                <span>21</span>
+                                <span class="selected">22</span>
+                                <span>23</span>
+                                <span>24</span>
+                                <span>25</span>
+                                <span class="holiday">26</span>
+                                <span class="holiday">27</span>
+                            </div>
+                            <!-- week 5 -->
+                            <div class="row">
+                                <span>28</span>
+                                <span>29</span>
+                                <span>30</span>
+                                <span>31</span>
+                            </div>
+                        </div>
+                        <div class="calendar-summary">
+                            <div class="working">
+                                <span>Working days:</span>
+                                <strong>19</strong>
+                            </div>
+                            <hr>
+                            <div class="non-working">
+                                <span>Non-working days:</span>
+                                <strong>8</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawcalendar">
+                    <h3>May</h3>
+                    <div class="soLich">
+
+
+
+                        <div class="calendar-days">
+                            <div class="thu">
+                                <span>Mo</span>
+                                <span>Tu</span>
+                                <span>We</span>
+                                <span>Th</span>
+                                <span>Fr</span>
+                                <span class="weekend">Sa</span>
+                                <span class="weekend">Su</span>
+                            </div>
+                            <!-- week 1 -->
+                            <div class="row">
+                                <span></span>
+                                <span></span>
+                                <span class="holiday">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span class="holiday">5</span>
+                                <span class="holiday">6</span>
+                            </div>
+
+                            <!-- week 2 -->
+                            <div class="row">
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>11</span>
+                                <span class="holiday">12</span>
+                                <span class="holiday">13</span>
+                            </div>
+                            <!-- week 3 -->
+                            <div class="row">
+                                <span>14</span>
+                                <span>15</span>
+                                <span>16</span>
+                                <span>17</span>
+                                <span>18</span>
+                                <span class="holiday">19</span>
+                                <span class="holiday">20</span>
+                            </div>
+                            <!-- week 4 -->
+                            <div class="row">
+                                <span>21</span>
+                                <span class="selected">22</span>
+                                <span>23</span>
+                                <span>24</span>
+                                <span>25</span>
+                                <span class="holiday">26</span>
+                                <span class="holiday">27</span>
+                            </div>
+                            <!-- week 5 -->
+                            <div class="row">
+                                <span>28</span>
+                                <span>29</span>
+                                <span>30</span>
+                                <span>31</span>
+                            </div>
+                        </div>
+                        <div class="calendar-summary">
+                            <div class="working">
+                                <span>Working days:</span>
+                                <strong>19</strong>
+                            </div>
+                            <hr>
+                            <div class="non-working">
+                                <span>Non-working days:</span>
+                                <strong>8</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawcalendar">
+                    <h3>June</h3>
+                    <div class="soLich">
+
+
+
+                        <div class="calendar-days">
+                            <div class="thu">
+                                <span>Mo</span>
+                                <span>Tu</span>
+                                <span>We</span>
+                                <span>Th</span>
+                                <span>Fr</span>
+                                <span class="weekend">Sa</span>
+                                <span class="weekend">Su</span>
+                            </div>
+                            <!-- week 1 -->
+                            <div class="row">
+                                <span></span>
+                                <span></span>
+                                <span class="holiday">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span class="holiday">5</span>
+                                <span class="holiday">6</span>
+                            </div>
+
+                            <!-- week 2 -->
+                            <div class="row">
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>11</span>
+                                <span class="holiday">12</span>
+                                <span class="holiday">13</span>
+                            </div>
+                            <!-- week 3 -->
+                            <div class="row">
+                                <span>14</span>
+                                <span>15</span>
+                                <span>16</span>
+                                <span>17</span>
+                                <span>18</span>
+                                <span class="holiday">19</span>
+                                <span class="holiday">20</span>
+                            </div>
+                            <!-- week 4 -->
+                            <div class="row">
+                                <span>21</span>
+                                <span class="selected">22</span>
+                                <span>23</span>
+                                <span>24</span>
+                                <span>25</span>
+                                <span class="holiday">26</span>
+                                <span class="holiday">27</span>
+                            </div>
+                            <!-- week 5 -->
+                            <div class="row">
+                                <span>28</span>
+                                <span>29</span>
+                                <span>30</span>
+                                <span>31</span>
+                            </div>
+                        </div>
+                        <div class="calendar-summary">
+                            <div class="working">
+                                <span>Working days:</span>
+                                <strong>19</strong>
+                            </div>
+                            <hr>
+                            <div class="non-working">
+                                <span>Non-working days:</span>
+                                <strong>8</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawcalendar">
+                    <h3>July</h3>
+                    <div class="soLich">
+
+
+
+                        <div class="calendar-days">
+                            <div class="thu">
+                                <span>Mo</span>
+                                <span>Tu</span>
+                                <span>We</span>
+                                <span>Th</span>
+                                <span>Fr</span>
+                                <span class="weekend">Sa</span>
+                                <span class="weekend">Su</span>
+                            </div>
+                            <!-- week 1 -->
+                            <div class="row">
+                                <span></span>
+                                <span></span>
+                                <span class="holiday">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span class="holiday">5</span>
+                                <span class="holiday">6</span>
+                            </div>
+
+                            <!-- week 2 -->
+                            <div class="row">
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>11</span>
+                                <span class="holiday">12</span>
+                                <span class="holiday">13</span>
+                            </div>
+                            <!-- week 3 -->
+                            <div class="row">
+                                <span>14</span>
+                                <span>15</span>
+                                <span>16</span>
+                                <span>17</span>
+                                <span>18</span>
+                                <span class="holiday">19</span>
+                                <span class="holiday">20</span>
+                            </div>
+                            <!-- week 4 -->
+                            <div class="row">
+                                <span>21</span>
+                                <span class="selected">22</span>
+                                <span>23</span>
+                                <span>24</span>
+                                <span>25</span>
+                                <span class="holiday">26</span>
+                                <span class="holiday">27</span>
+                            </div>
+                            <!-- week 5 -->
+                            <div class="row">
+                                <span>28</span>
+                                <span>29</span>
+                                <span>30</span>
+                                <span>31</span>
+                            </div>
+                        </div>
+                        <div class="calendar-summary">
+                            <div class="working">
+                                <span>Working days:</span>
+                                <strong>19</strong>
+                            </div>
+                            <hr>
+                            <div class="non-working">
+                                <span>Non-working days:</span>
+                                <strong>8</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawcalendar">
+                    <h3>August</h3>
+                    <div class="soLich">
+
+
+
+                        <div class="calendar-days">
+                            <div class="thu">
+                                <span>Mo</span>
+                                <span>Tu</span>
+                                <span>We</span>
+                                <span>Th</span>
+                                <span>Fr</span>
+                                <span class="weekend">Sa</span>
+                                <span class="weekend">Su</span>
+                            </div>
+                            <!-- week 1 -->
+                            <div class="row">
+                                <span></span>
+                                <span></span>
+                                <span class="holiday">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span class="holiday">5</span>
+                                <span class="holiday">6</span>
+                            </div>
+
+                            <!-- week 2 -->
+                            <div class="row">
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>11</span>
+                                <span class="holiday">12</span>
+                                <span class="holiday">13</span>
+                            </div>
+                            <!-- week 3 -->
+                            <div class="row">
+                                <span>14</span>
+                                <span>15</span>
+                                <span>16</span>
+                                <span>17</span>
+                                <span>18</span>
+                                <span class="holiday">19</span>
+                                <span class="holiday">20</span>
+                            </div>
+                            <!-- week 4 -->
+                            <div class="row">
+                                <span>21</span>
+                                <span class="selected">22</span>
+                                <span>23</span>
+                                <span>24</span>
+                                <span>25</span>
+                                <span class="holiday">26</span>
+                                <span class="holiday">27</span>
+                            </div>
+                            <!-- week 5 -->
+                            <div class="row">
+                                <span>28</span>
+                                <span>29</span>
+                                <span>30</span>
+                                <span>31</span>
+                            </div>
+                        </div>
+                        <div class="calendar-summary">
+                            <div class="working">
+                                <span>Working days:</span>
+                                <strong>19</strong>
+                            </div>
+                            <hr>
+                            <div class="non-working">
+                                <span>Non-working days:</span>
+                                <strong>8</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawcalendar">
+                    <h3>September</h3>
+                    <div class="soLich">
+
+
+
+                        <div class="calendar-days">
+                            <div class="thu">
+                                <span>Mo</span>
+                                <span>Tu</span>
+                                <span>We</span>
+                                <span>Th</span>
+                                <span>Fr</span>
+                                <span class="weekend">Sa</span>
+                                <span class="weekend">Su</span>
+                            </div>
+                            <!-- week 1 -->
+                            <div class="row">
+                                <span></span>
+                                <span></span>
+                                <span class="holiday">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span class="holiday">5</span>
+                                <span class="holiday">6</span>
+                            </div>
+
+                            <!-- week 2 -->
+                            <div class="row">
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>11</span>
+                                <span class="holiday">12</span>
+                                <span class="holiday">13</span>
+                            </div>
+                            <!-- week 3 -->
+                            <div class="row">
+                                <span>14</span>
+                                <span>15</span>
+                                <span>16</span>
+                                <span>17</span>
+                                <span>18</span>
+                                <span class="holiday">19</span>
+                                <span class="holiday">20</span>
+                            </div>
+                            <!-- week 4 -->
+                            <div class="row">
+                                <span>21</span>
+                                <span class="selected">22</span>
+                                <span>23</span>
+                                <span>24</span>
+                                <span>25</span>
+                                <span class="holiday">26</span>
+                                <span class="holiday">27</span>
+                            </div>
+                            <!-- week 5 -->
+                            <div class="row">
+                                <span>28</span>
+                                <span>29</span>
+                                <span>30</span>
+                                <span>31</span>
+                            </div>
+                        </div>
+                        <div class="calendar-summary">
+                            <div class="working">
+                                <span>Working days:</span>
+                                <strong>19</strong>
+                            </div>
+                            <hr>
+                            <div class="non-working">
+                                <span>Non-working days:</span>
+                                <strong>8</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawcalendar">
+                    <h3>October</h3>
+                    <div class="soLich">
+
+
+
+                        <div class="calendar-days">
+                            <div class="thu">
+                                <span>Mo</span>
+                                <span>Tu</span>
+                                <span>We</span>
+                                <span>Th</span>
+                                <span>Fr</span>
+                                <span class="weekend">Sa</span>
+                                <span class="weekend">Su</span>
+                            </div>
+                            <!-- week 1 -->
+                            <div class="row">
+                                <span></span>
+                                <span></span>
+                                <span class="holiday">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span class="holiday">5</span>
+                                <span class="holiday">6</span>
+                            </div>
+
+                            <!-- week 2 -->
+                            <div class="row">
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>11</span>
+                                <span class="holiday">12</span>
+                                <span class="holiday">13</span>
+                            </div>
+                            <!-- week 3 -->
+                            <div class="row">
+                                <span>14</span>
+                                <span>15</span>
+                                <span>16</span>
+                                <span>17</span>
+                                <span>18</span>
+                                <span class="holiday">19</span>
+                                <span class="holiday">20</span>
+                            </div>
+                            <!-- week 4 -->
+                            <div class="row">
+                                <span>21</span>
+                                <span class="selected">22</span>
+                                <span>23</span>
+                                <span>24</span>
+                                <span>25</span>
+                                <span class="holiday">26</span>
+                                <span class="holiday">27</span>
+                            </div>
+                            <!-- week 5 -->
+                            <div class="row">
+                                <span>28</span>
+                                <span>29</span>
+                                <span>30</span>
+                                <span>31</span>
+                            </div>
+                        </div>
+                        <div class="calendar-summary">
+                            <div class="working">
+                                <span>Working days:</span>
+                                <strong>19</strong>
+                            </div>
+                            <hr>
+                            <div class="non-working">
+                                <span>Non-working days:</span>
+                                <strong>8</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawcalendar">
+                    <h3>November</h3>
+                    <div class="soLich">
+
+
+
+                        <div class="calendar-days">
+                            <div class="thu">
+                                <span>Mo</span>
+                                <span>Tu</span>
+                                <span>We</span>
+                                <span>Th</span>
+                                <span>Fr</span>
+                                <span class="weekend">Sa</span>
+                                <span class="weekend">Su</span>
+                            </div>
+                            <!-- week 1 -->
+                            <div class="row">
+                                <span></span>
+                                <span></span>
+                                <span class="holiday">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span class="holiday">5</span>
+                                <span class="holiday">6</span>
+                            </div>
+
+                            <!-- week 2 -->
+                            <div class="row">
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>11</span>
+                                <span class="holiday">12</span>
+                                <span class="holiday">13</span>
+                            </div>
+                            <!-- week 3 -->
+                            <div class="row">
+                                <span>14</span>
+                                <span>15</span>
+                                <span>16</span>
+                                <span>17</span>
+                                <span>18</span>
+                                <span class="holiday">19</span>
+                                <span class="holiday">20</span>
+                            </div>
+                            <!-- week 4 -->
+                            <div class="row">
+                                <span>21</span>
+                                <span class="selected">22</span>
+                                <span>23</span>
+                                <span>24</span>
+                                <span>25</span>
+                                <span class="holiday">26</span>
+                                <span class="holiday">27</span>
+                            </div>
+                            <!-- week 5 -->
+                            <div class="row">
+                                <span>28</span>
+                                <span>29</span>
+                                <span>30</span>
+                                <span>31</span>
+                            </div>
+                        </div>
+                        <div class="calendar-summary">
+                            <div class="working">
+                                <span>Working days:</span>
+                                <strong>19</strong>
+                            </div>
+                            <hr>
+                            <div class="non-working">
+                                <span>Non-working days:</span>
+                                <strong>8</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawcalendar">
+                    <h3>December</h3>
+                    <div class="soLich">
+
+
+
+                        <div class="calendar-days">
+                            <div class="thu">
+                                <span>Mo</span>
+                                <span>Tu</span>
+                                <span>We</span>
+                                <span>Th</span>
+                                <span>Fr</span>
+                                <span class="weekend">Sa</span>
+                                <span class="weekend">Su</span>
+                            </div>
+                            <!-- week 1 -->
+                            <div class="row">
+                                <span></span>
+                                <span></span>
+                                <span class="holiday">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span class="holiday">5</span>
+                                <span class="holiday">6</span>
+                            </div>
+
+                            <!-- week 2 -->
+                            <div class="row">
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>11</span>
+                                <span class="holiday">12</span>
+                                <span class="holiday">13</span>
+                            </div>
+                            <!-- week 3 -->
+                            <div class="row">
+                                <span>14</span>
+                                <span>15</span>
+                                <span>16</span>
+                                <span>17</span>
+                                <span>18</span>
+                                <span class="holiday">19</span>
+                                <span class="holiday">20</span>
+                            </div>
+                            <!-- week 4 -->
+                            <div class="row">
+                                <span>21</span>
+                                <span class="selected">22</span>
+                                <span>23</span>
+                                <span>24</span>
+                                <span>25</span>
+                                <span class="holiday">26</span>
+                                <span class="holiday">27</span>
+                            </div>
+                            <!-- week 5 -->
+                            <div class="row">
+                                <span>28</span>
+                                <span>29</span>
+                                <span>30</span>
+                                <span>31</span>
+                            </div>
+                        </div>
+                        <div class="calendar-summary">
+                            <div class="working">
+                                <span>Working days:</span>
+                                <strong>19</strong>
+                            </div>
+                            <hr>
+                            <div class="non-working">
+                                <span>Non-working days:</span>
+                                <strong>8</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>

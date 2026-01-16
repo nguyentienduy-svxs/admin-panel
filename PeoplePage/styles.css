@@ -51,13 +51,13 @@ body{
     z-index: 5;
 }
 
-.link{
+.links{
     display: none;
     width: 220px;
     height: 220px;
     
 }
-.link a{
+.links a{
     display: flex;
     align-items: center;
     gap: 12px;
@@ -67,14 +67,14 @@ body{
     font-weight: 500;
     color: #000000;
 }
-.link a:hover{
+.links a:hover{
    color: #2F80ED;
 }
 .dropdown:hover .dropdown__background{
     display:block;
     
 }
-.dropdown:hover .link{
+.dropdown:hover .links{
     position: absolute;
     z-index: 10;
     top: 23px;
@@ -253,7 +253,7 @@ body,html{
     margin: 16px 24px 38px 0;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 28px;
 }
 .tabs{
  width:36.73%;
@@ -355,7 +355,7 @@ transition: transform 0.2s ease;
     gap: 33px;
 }
 .inputName{
-    height: 58px;
+   
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -379,8 +379,6 @@ font-weight: 400;
 }
 .otherinputs{
     width: 100%;
-    height: 518px;
-    
     display: flex;
     flex-direction: column;
     gap: 33px;
@@ -391,7 +389,6 @@ font-weight: 400;
 }
 .login{
     width: 50%;
-    height: 58px;
     display: flex;
     gap: 8px;
     flex-direction: column;
@@ -626,4 +623,134 @@ height: 90px;
     color: #ffffff;
     border: 1px solid #27AE60;
     cursor: pointer;
+}
+@media screen and (min-width: 1800px){
+.sidebar__content a{
+    font-size: 20px;
+}
+.sidebar {
+    height: auto;
+    width: 15.78%;
+}
+.inputName h5 {
+    font-size: 15px;
+    font-weight: 400;
+}
+.headx h5 {
+    font-size: 15px;
+    font-weight: 400;
+}
+.login h5, .select h5 {
+    font-size: 15px;
+    font-weight: 400;
+}
+.inputNames h5 {
+    font-size: 15px;
+    font-weight: 400;
+}
+label {
+    font-size: 15px;
+    font-weight: 400;
+}
+.inputright {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+}
+.containx {
+    height: 336px;
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+}
+.checkbox div label {
+    font-size: 15px;
+    font-weight: 400;
+}
+.nothing {
+    height: 18.4px;
+}
+.checkboxmargin{
+    margin-top: 10px;
+}
+}
+@media screen and (min-width: 2000px){
+.sidebar__content a{
+    font-size: 20px;
+}
+.sidebar {
+    height: auto;
+    width: 11.78%;
+}
+.checkbox div label {
+    font-size: 15px;
+    font-weight: 400;
+}
+.inputright {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+}
+.sidebar__content a{
+    transition: all 0.2s ease;
+}
+.sidebar__content a:hover{
+    background-color: #E0E0E0;
+   
+}
+.radio input{
+    width: 20px !important;
+    height: 20px !important;
+    cursor: pointer;
+}
+.info:hover .dropdown__background{
+    display:block;
+    
+}
+.info:hover .links {
+    position: absolute;
+    z-index: 10;
+    top: 23px;
+    left: -190px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 16px;
+    background-color: #ffff;
+}
+.info .dropdown__img{
+    transition: transform 0.3s ease;
+}
+.info:hover .dropdown__img {
+    transform: rotate(180deg);  
+}
+.selectbox:hover .branches{
+    display: flex;
+    z-index: 10;
+}
+
+
+.selectbox:focus-within .branches {
+  display: flex;
+}
+
+.selectbox:focus-within .image img{
+    transform: rotate(180deg);
+}
+.selectboxs:hover .branches{
+    display: flex;
+    z-index: 10;
+}
+.selectboxs:focus-within .branches {
+  display: flex;
+}
+.selectboxs:focus-within .image img{
+    transform: rotate(180deg);
 }
