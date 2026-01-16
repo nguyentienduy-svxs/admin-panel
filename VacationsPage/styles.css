@@ -270,6 +270,9 @@ body,html{
     gap: 8px;
     align-items: center;
 }
+input[type="date"]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+}
 .input__year{
     width: 80.69%;
     height: 100%;
@@ -381,7 +384,13 @@ body,html{
     background: #22c55e;
   border-radius: 50%;
 }
-
+.status-dots {
+  display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #ff0000;
+  border-radius: 50%;
+}
 .projects-table th:first-child,
 .projects-table td:first-child {
   width: 40px;
@@ -452,4 +461,79 @@ cursor: pointer;
 }
 .image img:hover{
     transform: scale(1.2);
+}
+@media screen and (min-width: 1800px){
+.sidebar__content a{
+    font-size: 20px;
+}
+.sidebar {
+    height: auto;
+    width: 15.78%;
+}
+}
+@media screen and (min-width: 2000px){
+.sidebar__content a{
+    font-size: 20px;
+}
+.sidebar {
+    height: auto;
+    width: 11.78%;
+}
+.projects-table thead th {
+    background: #D1D1D6;
+    color: #313131;
+    font-weight: 400;
+    padding: 8px 25px;
+    text-align: left;
+    font-size: 16px;
+}
+.projects-table tbody td {
+    padding: 11.5px 25px;
+    color: #1f1f1f;
+    font-size: 16px;
+    font-weight: 400;
+}
+}
+.sidebar__content a{
+    transition: all 0.2s ease;
+}
+.sidebar__content a:hover{
+    background-color: #E0E0E0;
+   
+}
+.carlendar{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.carlendar input[type="date"]{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 38px;
+    opacity: 0;
+    cursor: pointer;
+}
+.info:hover .dropdown__background{
+    display:block;
+    
+}
+.info:hover .link {
+    position: absolute;
+    z-index: 10;
+    top: 23px;
+    left: -190px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 16px;
+    background-color: #ffff;
+}
+.info .dropdown__img{
+    transition: transform 0.3s ease;
+}
+.info:hover .dropdown__img {
+    transform: rotate(180deg);  
 }

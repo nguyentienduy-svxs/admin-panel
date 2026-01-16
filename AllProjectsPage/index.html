@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="info">
+            <img class="info__avt" src="../Dashboard/img/15.svg" alt="avt">
+            <h2 class="info__name">Dominique Ch.</h2>
+            <div class="dropdown">
+                <img class="dropdown__img" src="../Dashboard/img/arrow_drop_down.svg" alt="dropdown">
+                <div class="dropdown__background">
+
+                </div>
+                <div class="links">
+                    <a href="../MyDetailPage/index.html">
+                        <img src="../Dashboard/img/baseline-account_circle-24px.svg" alt="circle">
+                        <span>My details</span>
+                    </a>
+                    <a href="#">
+                        <img src="../Dashboard/img/_ionicons_svg_md-calendar.svg" alt="circle">
+                        <span>My calendar</span>
+                    </a>
+                    <a href="../VacationsPage/index.html">
+                        <img src="../Dashboard/img/baseline-beach_access-24px.svg" alt="umbrella">
+                        <span>Vacations</span>
+                    </a>
+                    <a href="#">
+                        <img src="../Dashboard/img/_ionicons_svg_md-document.svg" alt="settings">
+                        <span>Corporate CV</span>
+                    </a>
+                    <a href="#">
+                        <img src="../Dashboard/img/_ionicons_svg_md-rocket.svg" alt="settings">
+                        <span>Performance reviews</span>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="searchbar">
+            <div class="search">
+                <img src="../Dashboard/img/search.svg" alt="search">
+                <input type="text" placeholder="Quick search">
+            </div>
+            <span class="notify"><img src="../Dashboard/img/2 (2).svg" alt="notification">
+                <div class="dropped">
+                    <span>You have no new notifications.</span>
+                </div>
+
+            </span>
+        </div>
+    </header>
+    <main>
+        <div class="sidebar">
+            <div class="sidebar__content">
+                <a class="dashboard" href="../Dashboard/index.html">
+                    <img src="./img/dashboard.svg" alt="settings">
+                    <span>Dashboard</span>
+                </a>
+                <a  href="./index.html">
+                    <img src="./img/people.svg" alt="settings">
+                    <span>People</span>
+                </a>
+                <a class="modify" href="../ProjectsPage/index.html">
+                    <img src="./img/assignment.svg" alt="settings">
+                    <span>Projects</span>
+                </a>
+                <a href="../CalendarPage/index.html">
+                    <img src="../Dashboard/img/_ionicons_svg_md-calendar.svg" alt="settings">
+                    <span>Calendar</span>
+                </a>
+                <a href="../TrainingPage/index.html">
+                    <img src="../Dashboard/img/_ionicons_svg_md-easel.svg" alt="settings">
+                    <span>Training</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/donghocat.svg" alt="settings">
+                    <span>Timesheet</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/_ionicons_svg_md-chatbubbles.svg" alt="settings">
+                    <span>Reports</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/company.svg" alt="settings">
+                    <span>Administration</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/chamhoi.svg" alt="settings">
+                    <span>Help</span>
+                </a>
+            </div>
+            <div class="version">
+                <h2>CAMIOCA</h2>
+                <span>Version: 1.0.0.11</span>
+            </div>
+        </div>
+        <div class="maincontents">
+            <div class="tabs">
+                <a class="tab2 link" href="../ProjectsPage/index.html">
+                    <div class="tab1s">
+                        <img src="./img/_ionicons_svg_md-search (2).svg" alt="kinhlup">
+                        <span>Find projects</span>
+                    </div>
+                </a>
+
+                <a class=" tab1 link" href="./index.html">
+
+                    <div class="tab2s">
+                        <img src="./img/baseline-archive-24px (1).svg" alt="people">
+                        <span>All projects</span>
+                    </div>
+                </a>
+                <a class=" tab2 link" href="#">
+
+                    <div class="tab2s">
+                        <img src="./img/baseline-account_circle-24px (1).svg" alt="people">
+                        <span>Accounts</span>
+                    </div>
+                </a>
+
+
+            </div>
+            <div class="listpeople">
+                <div class="project-list">
+                    <h2>Project list</h2>
+
+                    <!-- Industry -->
+                    <div class="filter-row">
+                        <div class="label">Industry</div>
+                        <div class="chips">
+                            <span class="chip active">All</span>
+                            <span class="chip">Banking</span>
+                            <span class="chip">Financial</span>
+                            <span class="chip">Government</span>
+                            <span class="chip">Healthcare</span>
+                            <span class="chip">Hi-Tech</span>
+                            <span class="chip">Insurance</span>
+                            <span class="chip">ISV</span>
+                            <span class="chip">Logistics</span>
+                            <span class="chip">Media</span>
+                            <span class="chip">Pharma</span>
+                            <span class="chip">Public</span>
+                            <span class="chip">Retail</span>
+                            <span class="chip">Technology</span>
+                            <span class="chip">Telecom</span>
+                            <span class="chip">Utilities</span>
+                            <span class="chip">Internal</span>
+                            <span class="chip">Others</span>
+                        </div>
+                    </div>
+
+                    <!-- Status -->
+                    <div class="filter-row status-row">
+                        <div class="label">Status</div>
+
+                        <div class="status-options">
+                            <label><input type="checkbox" checked> In progress</label>
+                            <label><input type="checkbox" checked> Upcoming</label>
+                            <label><input type="checkbox"> Suspended</label>
+                            <label><input type="checkbox"> Completed</label>
+                            <label><input type="checkbox"> Anticipated</label>
+                        </div>
+
+                        <div class="status-count">
+                            <div>In progress <strong>581</strong></div>
+                            <div>Upcoming <strong>2</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__down">
+
+
+                <div class="down__right">
+                    <div class="header">
+                        <h2>Found: 5611</h2>
+                        <button class="btn"><img src="./img/_ionicons_svg_md-download (1).svg" alt="download"><span>Export to Excel</span></button>
+                    </div>
+                    <table class="employee-table">
+                        <thead>
+                            <tr>
+                                <th>Practice</th>
+                                <th>Project name</th>
+                                <th>Short name</th>
+                                <th>Status</th>
+                                <th>Start date</th>
+                                <th>End date</th>
+                                <th>Account</th>
+                                <th>Region</th>
+                                <th>Industry</th>
+                                <th>Source type</th>
+                                <th>Billing entry</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ENG</td>
+                                <td>ABC app</td>
+                                <td>ABCAPP</td>
+                                <td>In progress</td>
+                                <td>11.01.2008</td>
+                                <td>11.01.2009</td>
+                                <td>ABC</td>
+                                <td>Latin America</td>
+                                <td>Utilities</td>
+                                <td>Customer</td>
+                                <td>Corporation</td>
+                            </tr>
+
+                            <tr class="row2">
+                                <td>ENG</td>
+                                <td>ABC app</td>
+                                <td>ABCAPP</td>
+                                <td>In progress</td>
+                                <td>11.01.2008</td>
+                                <td>11.01.2009</td>
+                                <td>ABC</td>
+                                <td>Latin America</td>
+                                <td>Utilities</td>
+                                <td>Customer</td>
+                                <td>Corporation</td>
+                            </tr>
+
+                            <tr>
+                                <td>ENG</td>
+                                <td>ABC app</td>
+                                <td>ABCAPP</td>
+                                <td>In progress</td>
+                                <td>11.01.2008</td>
+                                <td>11.01.2009</td>
+                                <td>ABC</td>
+                                <td>Latin America</td>
+                                <td>Utilities</td>
+                                <td>Customer</td>
+                                <td>Corporation</td>
+                            </tr>
+
+                            <tr class="row2">
+                                <td>ENG</td>
+                                <td>ABC app</td>
+                                <td>ABCAPP</td>
+                                <td>In progress</td>
+                                <td>11.01.2008</td>
+                                <td>11.01.2009</td>
+                                <td>ABC</td>
+                                <td>Latin America</td>
+                                <td>Utilities</td>
+                                <td>Customer</td>
+                                <td>Corporation</td>
+                            </tr>
+
+                            <tr>
+                                <td>ENG</td>
+                                <td>ABC app</td>
+                                <td>ABCAPP</td>
+                                <td>In progress</td>
+                                <td>11.01.2008</td>
+                                <td>11.01.2009</td>
+                                <td>ABC</td>
+                                <td>Latin America</td>
+                                <td>Utilities</td>
+                                <td>Customer</td>
+                                <td>Corporation</td>
+                            </tr>
+
+                            <tr class="row2">
+                                <td>ENG</td>
+                                <td>ABC app</td>
+                                <td>ABCAPP</td>
+                                <td>In progress</td>
+                                <td>11.01.2008</td>
+                                <td>11.01.2009</td>
+                                <td>ABC</td>
+                                <td>Latin America</td>
+                                <td>Utilities</td>
+                                <td>Customer</td>
+                                <td>Corporation</td>
+                            </tr>
+
+                            <tr>
+                                <td>ENG</td>
+                                <td>ABC app</td>
+                                <td>ABCAPP</td>
+                                <td>In progress</td>
+                                <td>11.01.2008</td>
+                                <td>11.01.2009</td>
+                                <td>ABC</td>
+                                <td>Latin America</td>
+                                <td>Utilities</td>
+                                <td>Customer</td>
+                                <td>Corporation</td>
+                            </tr>
+
+                            <tr class="row2">
+                                <td>ENG</td>
+                                <td>ABC app</td>
+                                <td>ABCAPP</td>
+                                <td>In progress</td>
+                                <td>11.01.2008</td>
+                                <td>11.01.2009</td>
+                                <td>ABC</td>
+                                <td>Latin America</td>
+                                <td>Utilities</td>
+                                <td>Customer</td>
+                                <td>Corporation</td>
+                            </tr>
+
+                            <tr>
+                                <td>ENG</td>
+                                <td>ABC app</td>
+                                <td>ABCAPP</td>
+                                <td>In progress</td>
+                                <td>11.01.2008</td>
+                                <td>11.01.2009</td>
+                                <td>ABC</td>
+                                <td>Latin America</td>
+                                <td>Utilities</td>
+                                <td>Customer</td>
+                                <td>Corporation</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="pagination">
+                        <a href="#" class="nav disabled">
+                            ← <span>Previous</span>
+                        </a>
+
+                        <a href="#" class="page active">1</a>
+                        <a href="#" class="page">2</a>
+                        <a href="#" class="page">3</a>
+                        <a href="#" class="page">4</a>
+                        <a href="#" class="page">5</a>
+
+                        <span class="dots">…</span>
+
+                        <a href="#" class="page">31</a>
+
+                        <a href="#" class="nav next">
+                            <span>Next</span> →
+                        </a>
+
+                        <a href="#" class="show-all">Show all</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>

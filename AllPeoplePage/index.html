@@ -23,7 +23,7 @@
                 <div class="dropdown__background">
 
                 </div>
-                <div class="link">
+                <div class="links">
                     <a href="../MyDetailPage/index.html">
                         <img src="../Dashboard/img/baseline-account_circle-24px.svg" alt="circle">
                         <span>My details</span>
@@ -73,15 +73,15 @@
                     <img src="./img/people.svg" alt="settings">
                     <span>People</span>
                 </a>
-                <a href="#">
+                <a href="../ProjectsPage/index.html">
                     <img src="../Dashboard/img/assignment.svg" alt="settings">
                     <span>Projects</span>
                 </a>
-                <a href="#">
+                <a href="../CalendarPage/index.html">
                     <img src="../Dashboard/img/_ionicons_svg_md-calendar.svg" alt="settings">
                     <span>Calendar</span>
                 </a>
-                <a href="#">
+                <a href="../TrainingPage/index.html">
                     <img src="../Dashboard/img/_ionicons_svg_md-easel.svg" alt="settings">
                     <span>Training</span>
                 </a>
@@ -110,12 +110,12 @@
         <div class="maincontents">
             <div class="tabs">
                 <a class="tab2 link" href="../PeoplePage/index.html">
-                   <div class="tab1s">
-                    <img src="./img/_ionicons_svg_md-search.svg" alt="kinhlup">
-                    <span>Find person</span>
-                </div>
+                    <div class="tab1s">
+                        <img src="./img/_ionicons_svg_md-search.svg" alt="kinhlup">
+                        <span>Find person</span>
+                    </div>
                 </a>
-                
+
                 <a class=" tab1 link" href="./index.html">
 
                     <div class="tab2s">
@@ -123,69 +123,279 @@
                         <span>All people</span>
                     </div>
                 </a>
+                
 
             </div>
             <div class="listpeople">
                 <div class="headd">
                     <h2>List of active people</h2>
-                    <button><img src="./img/_ionicons_svg_md-download.svg" alt="tai"> <span>Export to Excel</span></button>
+                    <button><img src="./img/_ionicons_svg_md-download.svg" alt="tai"> <span>Export to
+                            Excel</span></button>
                 </div>
                 <div class="table">
                     <table class="summary-table">
-  <thead>
-    <tr>
-      <th>Delivery billable</th>
-      <th>Delivery unbillable</th>
-      <th>Administration</th>
-      <th>CEO</th>
-      <th>Sales</th>
-      <th>Marketing</th>
-      <th>Finance</th>
-      <th>HR</th>
-      <th>IT</th>
-      <th>Legal</th>
-      <th>PPS</th>
-      <th>L &amp; D</th>
-      <th>OG</th>
-      <th>OBS</th>
-      <th>EBO</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>233</td>
-      <td>11</td>
-      <td>8</td>
-      <td>1</td>
-      <td>15</td>
-      <td>11</td>
-      <td>8</td>
-      <td>4</td>
-      <td>3</td>
-      <td>2</td>
-      <td>15</td>
-      <td>1</td>
-      <td>5</td>
-      <td>2</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
+                        <thead>
+                            <tr>
+                                <th>Delivery billable</th>
+                                <th>Delivery unbillable</th>
+                                <th>Administration</th>
+                                <th>CEO</th>
+                                <th>Sales</th>
+                                <th>Marketing</th>
+                                <th>Finance</th>
+                                <th>HR</th>
+                                <th>IT</th>
+                                <th>Legal</th>
+                                <th>PPS</th>
+                                <th>L &amp; D</th>
+                                <th>OG</th>
+                                <th>OBS</th>
+                                <th>EBO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>233</td>
+                                <td>11</td>
+                                <td>8</td>
+                                <td>1</td>
+                                <td>15</td>
+                                <td>11</td>
+                                <td>8</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>15</td>
+                                <td>1</td>
+                                <td>5</td>
+                                <td>2</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                 </div>
                 <div class="contain__thongso">
                     <div class="thongso">
-                    <span>Delivery: <span class="modifier">581</span></span>
-                    <span>Non-delivery: <span class="modifier">132</span></span>
-                    <span>Total: <span class="modifier">713</span></span>
-                </div>
+                        <span>Delivery: <span class="modifier">581</span></span>
+                        <span>Non-delivery: <span class="modifier">132</span></span>
+                        <span>Total: <span class="modifier">713</span></span>
+                    </div>
                 </div>
             </div>
-           <div class="content__down">
+            <div class="content__down">
                 <div class="down__left">
-                    
+                    <h2>Filter</h2>
+                    <div class="regions">
+                        <h5>Regions</h5>
+                        <div>
+                            <input type="checkbox" id="checkbox3">
+                            <label for="checkbox3">UK (111)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox2">
+                            <label for="checkbox2">US (98)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox4">
+                            <label for="checkbox4">France (45)</label>
+                        </div>
+
+                    </div>
+                    <div class="regions">
+                        <h5>Branches</h5>
+                        <div>
+                            <input type="checkbox" id="checkbox5">
+                            <label for="checkbox5">London (111)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox6">
+                            <label for="checkbox6">Liverpool (12)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox7">
+                            <label for="checkbox7">Manchester (5)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox8">
+                            <label for="checkbox8">Leeds (3)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox9">
+                            <label for="checkbox9">Cardiff (1)</label>
+                        </div>
+
+                    </div>
+                    <div class="regions">
+                        <h5>Divisons</h5>
+                        <div>
+                            <input type="checkbox" id="checkbox10">
+                            <label for="checkbox10">Management (43)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox11">
+                            <label for="checkbox11">Finance (10)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox12">
+                            <label for="checkbox12">Legal (1)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox13">
+                            <label for="checkbox13">Operation (1)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox14">
+                            <label for="checkbox14">IT (1)</label>
+                        </div>
+
+
+                    </div>
+                    <button class="btnclear">Clear</button>
                 </div>
-                <div class="down__right"></div>
-           </div>
+
+                <div class="down__right">
+                    <div class="header">
+                        <h2>Found: 110</h2>
+
+                    </div>
+                    <table class="employee-table">
+                        <thead>
+                            <tr>
+                                <th>Full name</th>
+                                <th>Branch</th>
+                                <th>Division</th>
+                                <th>User type</th>
+                                <th>Contract type</th>
+                                <th>Start date</th>
+                                <th>ID</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Konstantin Konstantinopolsky</td>
+                                <td>London</td>
+                                <td>Management</td>
+                                <td>Delivery billable</td>
+                                <td>Employee</td>
+                                <td>12.01.2013</td>
+                                <td>14321</td>
+                            </tr>
+                            <tr class="row2">
+                                <td>Andrew Salgado</td>
+                                <td>London</td>
+                                <td>Management</td>
+                                <td>Delivery billable</td>
+                                <td>Employee</td>
+                                <td>21.04.2014</td>
+                                <td>21345</td>
+                            </tr>
+                            <tr>
+                                <td>Magdalena Edinburgh</td>
+                                <td>Liverpool</td>
+                                <td>Operation</td>
+                                <td>Delivery billable</td>
+                                <td>Subcontractor</td>
+                                <td>02.11.2015</td>
+                                <td>1894</td>
+                            </tr>
+                            <tr class="row2">
+                                <td>Matt Travis</td>
+                                <td>Liverpool</td>
+                                <td>Management</td>
+                                <td>Delivery billable</td>
+                                <td>Employee</td>
+                                <td>02.11.2016</td>
+                                <td>135567</td>
+                            </tr>
+                            <tr>
+                                <td>Daniel Wellington</td>
+                                <td>Manchester</td>
+                                <td>Operation</td>
+                                <td>Delivery billable</td>
+                                <td>Employee</td>
+                                <td>02.11.2012</td>
+                                <td>10973</td>
+                            </tr>
+                            <tr class="row2">
+                                <td>Lucia Mirosini</td>
+                                <td>Leeds</td>
+                                <td>Finance</td>
+                                <td>Delivery billable</td>
+                                <td>Employee</td>
+                                <td>02.11.2011</td>
+                                <td>6324</td>
+                            </tr>
+                            <tr>
+                                <td>Anette Brown</td>
+                                <td>London</td>
+                                <td>Operation</td>
+                                <td>Delivery billable</td>
+                                <td>Employee</td>
+                                <td>02.11.2005</td>
+                                <td>4322</td>
+                            </tr>
+                            <tr class="row2">
+                                <td>Christian Lambrou</td>
+                                <td>London</td>
+                                <td>Finance</td>
+                                <td>Delivery billable</td>
+                                <td>Employee</td>
+                                <td>02.11.2009</td>
+                                <td>4521</td>
+                            </tr>
+                            <tr>
+                                <td>Phil Collins</td>
+                                <td>Manchester</td>
+                                <td>Finance</td>
+                                <td>Delivery billable</td>
+                                <td>Subcontractor</td>
+                                <td>02.11.2008</td>
+                                <td>1422</td>
+                            </tr>
+                            <tr class="row2">
+                                <td>Winston Holliday</td>
+                                <td>London</td>
+                                <td>Operation</td>
+                                <td>Delivery billable</td>
+                                <td>Employee</td>
+                                <td>02.11.2017</td>
+                                <td>45667</td>
+                            </tr>
+                            <tr>
+                                <td>Carla Andrade</td>
+                                <td>London</td>
+                                <td>Operation</td>
+                                <td>Delivery billable</td>
+                                <td>Employee</td>
+                                <td>02.11.2017</td>
+                                <td>98871</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pagination">
+                        <a href="#" class="nav disabled">
+                            ← <span>Previous</span>
+                        </a>
+
+                        <a href="#" class="page active">1</a>
+                        <a href="#" class="page">2</a>
+                        <a href="#" class="page">3</a>
+                        <a href="#" class="page">4</a>
+                        <a href="#" class="page">5</a>
+
+                        <span class="dots">…</span>
+
+                        <a href="#" class="page">31</a>
+
+                        <a href="#" class="nav next">
+                            <span>Next</span> →
+                        </a>
+
+                        <a href="#" class="show-all">Show all</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </main>

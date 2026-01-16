@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="info">
+            <img class="info__avt" src="../Dashboard/img/15.svg" alt="avt">
+            <h2 class="info__name">Dominique Ch.</h2>
+            <div class="dropdown">
+                <img class="dropdown__img" src="../Dashboard/img/arrow_drop_down.svg" alt="dropdown">
+                <div class="dropdown__background">
+
+                </div>
+                <div class="links">
+                    <a href="../MyDetailPage/index.html">
+                        <img src="../Dashboard/img/baseline-account_circle-24px.svg" alt="circle">
+                        <span>My details</span>
+                    </a>
+                    <a href="#">
+                        <img src="../Dashboard/img/_ionicons_svg_md-calendar.svg" alt="circle">
+                        <span>My calendar</span>
+                    </a>
+                    <a href="../VacationsPage/index.html">
+                        <img src="../Dashboard/img/baseline-beach_access-24px.svg" alt="umbrella">
+                        <span>Vacations</span>
+                    </a>
+                    <a href="#">
+                        <img src="../Dashboard/img/_ionicons_svg_md-document.svg" alt="settings">
+                        <span>Corporate CV</span>
+                    </a>
+                    <a href="#">
+                        <img src="../Dashboard/img/_ionicons_svg_md-rocket.svg" alt="settings">
+                        <span>Performance reviews</span>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="searchbar">
+            <div class="search">
+                <img src="../Dashboard/img/search.svg" alt="search">
+                <input type="text" placeholder="Quick search">
+            </div>
+            <span class="notify"><img src="../Dashboard/img/2 (2).svg" alt="notification">
+                <div class="dropped">
+                    <span>You have no new notifications.</span>
+                </div>
+
+            </span>
+        </div>
+    </header>
+    <main>
+        <div class="sidebar">
+            <div class="sidebar__content">
+                <a class="dashboard" href="../Dashboard/index.html">
+                    <img src="../MyDetailPage/img/dashboard.svg" alt="settings">
+                    <span>Dashboard</span>
+                </a>
+                <a href="../PeoplePage/index.html">
+                    <img src="../Dashboard/img/people.svg" alt="settings">
+                    <span>People</span>
+                </a>
+                <a class="modify" href="./index.html">
+                    <img src="../Dashboard/img/assignment.svg" alt="settings">
+                    <span>Projects</span>
+                </a>
+                <a href="../CalendarPage/index.html">
+                    <img src="../Dashboard/img/_ionicons_svg_md-calendar.svg" alt="settings">
+                    <span>Calendar</span>
+                </a>
+                <a href="../TrainingPage/index.html">
+                    <img src="../Dashboard/img/_ionicons_svg_md-easel.svg" alt="settings">
+                    <span>Training</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/donghocat.svg" alt="settings">
+                    <span>Timesheet</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/_ionicons_svg_md-chatbubbles.svg" alt="settings">
+                    <span>Reports</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/company.svg" alt="settings">
+                    <span>Administration</span>
+                </a>
+                <a href="#">
+                    <img src="../Dashboard/img/chamhoi.svg" alt="settings">
+                    <span>Help</span>
+                </a>
+            </div>
+            <div class="version">
+                <h2>CAMIOCA</h2>
+                <span>Version: 1.0.0.11</span>
+            </div>
+        </div>
+        <div class="maincontents">
+            <div class="tabs">
+                <a class="tab1 link" href="./index.html">
+                    <div class="tab1s">
+                        <img src="./img/_ionicons_svg_md-search (1).svg" alt="kinhlup">
+                        <span>Find projects</span>
+                    </div>
+                </a>
+
+                <a class=" tab2 link" href="../AllProjectsPage/index.html">
+
+                    <div class="tab2s">
+                        <img src="./img/baseline-archive-24px.svg" alt="people">
+                        <span>All projects</span>
+                    </div>
+                </a>
+                <a class=" tab2 link" href="#">
+
+                    <div class="tab2s">
+                        <img src="./img/baseline-account_circle-24px.svg" alt="people">
+                        <span>Accounts</span>
+                    </div>
+                </a>
+
+
+            </div>
+            <div class="maincontents__down">
+                <h2>Filter</h2>
+                <div class="bigleft">
+                    <div class="inputleft">
+                        <div class="inputName">
+                            <h5>Project name</h5>
+                            <input type="text" placeholder="Search...">
+                        </div>
+                        <div class="inputName">
+                            <h5>Short name</h5>
+                            <input type="text" placeholder="Search...">
+                        </div>
+                        <div class="inputName inputDescription">
+                            <h5>Project description</h5>
+                            <input class="search" type="text" placeholder="Search...">
+                            <h5 class="description">Notion: Full-text searching</h5>
+                        </div>
+                        <div class="input2row row1">
+
+                            <div class="login select">
+                                <h5>Practice</h5>
+                                <div class="selectbox">
+                                    <input type="text" placeholder="Select">
+                                    <div class="dropdownss">
+                                        <input class="checks" type="checkbox" id="checked" hidden>
+                                        <label class="image" for="checked"><img src="./img/arrow_drop_down.svg"
+                                                alt="dropdown"></label>
+                                        <div class="branches">
+                                            <span>New York</span>
+                                            <span>London</span>
+                                            <span>San Francisco</span>
+                                            <span>Tokyo</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="login select">
+                                <h5>Account</h5>
+                                <div class="selectbox">
+                                    <input type="text" placeholder="Select">
+                                    <div class="dropdownss">
+                                        <input class="checks" type="checkbox" id="checkedx" hidden>
+                                        <label class="image" for="checkedx"><img src="./img/arrow_drop_down.svg"
+                                                alt="dropdown"></label>
+                                        <div class="branches">
+                                            <span>New York</span>
+                                            <span>London</span>
+                                            <span>San Francisco</span>
+                                            <span>Tokyo</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="input2row">
+
+                            <div class="login select">
+                                <h5>Source type</h5>
+                                <div class="selectbox">
+                                    <input type="text" placeholder="Select">
+                                    <div class="dropdownss">
+                                        <input class="checks" type="checkbox" id="checkeds" hidden>
+                                        <label class="image" for="checkeds"><img src="./img/arrow_drop_down.svg"
+                                                alt="dropdown"></label>
+                                        <div class="branches">
+                                            <span>New York</span>
+                                            <span>London</span>
+                                            <span>San Francisco</span>
+                                            <span>Tokyo</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="login select">
+                                <h5>MSA signer</h5>
+                                <div class="selectbox">
+                                    <input type="text" placeholder="Select">
+                                    <div class="dropdownss">
+                                        <input class="checks" type="checkbox" id="checkedaa" hidden>
+                                        <label class="image" for="checkedaa"><img src="./img/arrow_drop_down.svg"
+                                                alt="dropdown"></label>
+                                        <div class="branches">
+                                            <span>New York</span>
+                                            <span>London</span>
+                                            <span>San Francisco</span>
+                                            <span>Tokyo</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="input2row">
+
+                            <div class="login select">
+                                <h5>Billing entity</h5>
+                                <div class="selectbox">
+                                    <input type="text" placeholder="Select">
+                                    <div class="dropdownss">
+                                        <input class="checks" type="checkbox" id="checkedbb" hidden>
+                                        <label class="image" for="checkedbb"><img src="./img/arrow_drop_down.svg"
+                                                alt="dropdown"></label>
+                                        <div class="branches">
+                                            <span>New York</span>
+                                            <span>London</span>
+                                            <span>San Francisco</span>
+                                            <span>Tokyo</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="login select">
+                                <h5>Industry</h5>
+                                <div class="selectbox">
+                                    <input type="text" placeholder="Select">
+                                    <div class="dropdownss">
+                                        <input class="checks" type="checkbox" id="checkedc" hidden>
+                                        <label class="image" for="checkedc"><img src="./img/arrow_drop_down.svg"
+                                                alt="dropdown"></label>
+                                        <div class="branches">
+                                            <span>New York</span>
+                                            <span>London</span>
+                                            <span>San Francisco</span>
+                                            <span>Tokyo</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="input2row">
+
+                            <div class="login select">
+                                <h5>Region</h5>
+                                <div class="selectbox">
+                                    <input type="text" placeholder="Select">
+                                    <div class="dropdownss">
+                                        <input class="checks" type="checkbox" id="checkedssx" hidden>
+                                        <label class="image" for="checkedssx"><img src="./img/arrow_drop_down.svg"
+                                                alt="dropdown"></label>
+                                        <div class="branches">
+                                            <span>New York</span>
+                                            <span>London</span>
+                                            <span>San Francisco</span>
+                                            <span>Tokyo</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="inputright">
+                        <div class="inputNames">
+                            <h5>User type</h5>
+                            <div class="selectboxs">
+                                <input type="text" placeholder="Any">
+                                <div class="dropdownss">
+                                    <input class="checks" type="checkbox" id="checkedss" hidden>
+                                    <label class="image" for="checkedss"><img src="./img/arrow_drop_down.svg"
+                                            alt="dropdown"></label>
+                                    <div class="branches">
+                                        <span>New York</span>
+                                        <span>London</span>
+                                        <span>San Francisco</span>
+                                        <span>Tokyo</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="inputNames inputNamesModify">
+                            <h5>User type</h5>
+                            <div class="selectboxs selectModify">
+                                <span class="progress"><span>In progress</span>
+                                <img src="./img/Close.svg" alt="close">
+                             </span>
+                                <div class="dropdownss big">
+                                    <input class="checks" type="checkbox" id="checkedsds" hidden>
+                                    <label class="image" for="checkedsds"><img src="./img/arrow_drop_down.svg"
+                                            alt="dropdown"></label>
+                                    <div class="branches bigbranch">
+                                        <span>New York</span>
+                                        <span>London</span>
+                                        <span>San Francisco</span>
+                                        <span>Tokyo</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="input2row input2rowmodify">
+
+                            <div class="login select">
+                                <h5>Start date from:</h5>
+                                <div class="selectbox">
+                                    <div class="date-wrapper">
+                                        <input type="date" id="date">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="login select">
+                                <div class="nothing"></div>
+                                <div class="selectbox">
+
+                                    <div class="date-wrapper">
+                                        <input type="date" id="date">
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input2row input2rowmodifys">
+
+                            <div class="login select">
+                                <h5>Finish date from:</h5>
+                                <div class="selectbox">
+                                     <div class="date-wrapper">
+                                        <input type="date" id="date">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="login select">
+                                <div class="nothing"></div>
+                                <div class="selectbox">
+                                        <div class="date-wrapper">
+                                            <input type="date" id="date">
+                                        </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputType2">
+                            <div class="headx">
+                                <h5>Search mode</h5>
+                                <div class="contain__radio">
+                                    <div class="radio">
+                                        <input  type="radio" id="radio1" name="capability" checked>
+                                        <label for="radio1">AND</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input  type="radio" id="radio1" name="capability">
+                                        <label for="radio2">OR</label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <input type="text" name="a" id="a" placeholder="Search...">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bigright">
+                    <div class="containbtn">
+                        <button class="btn1">Clear</button>
+                        <button class="btn2">Search</button>
+                    </div>
+                </div>
+            </div>
+    </main>
